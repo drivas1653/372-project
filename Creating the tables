@@ -19,7 +19,7 @@ CREATE TABLE watch_history (
     history_id INT PRIMARY KEY,
     user_id INT,
     video_id INT,
-    watch_date DATETIME,
+    watch_date TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(user_id),
     FOREIGN KEY (video_id) REFERENCES videos(video_id)
 );
