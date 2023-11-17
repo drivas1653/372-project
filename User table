@@ -1,4 +1,4 @@
--- Generate dummy data for Users Table
+-- Loading dummy data for Users Table
 INSERT INTO users (user_id, username) VALUES
 (1, 'john_doe'),
 (2, 'jane_smith'),
