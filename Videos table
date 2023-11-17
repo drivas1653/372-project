@@ -407,10 +407,6 @@ INSERT INTO videos (video_id, title, genre, release_date, duration_seconds, arti
 (405, 'Climbing Chronicles: Scaling Heights and Summit Stories', 'Sports', '2027-03-15', 360, 'ClimbingChroniclesScaling'),
 (406, 'Archery Adventure: Arrows, Targets, and Bullseye Bliss', 'Sports', '2027-04-05', 660, 'ArcheryAdventureArrows'),
 (407, 'Karate Chronicles: Kicks, Blocks, and Martial Arts Marvels', 'Sports', '2027-05-22', 540, 'KarateChroniclesKicks'),
-Certainly! Here are 30 additional rows themed after popular online games for the table:
-
-```sql
-INSERT INTO videos (video_id, title, genre, release_date, duration_seconds, artist_or_youtuber) VALUES
 (408, 'Fortnite Frenzy: Battle Royale Showdown', 'Gaming', '2027-06-18', 720, 'FortniteFrenzyShowdown'),
 (409, 'League Legends: Championship Chronicles', 'Gaming', '2027-07-10', 540, 'LeagueLegendsChronicles'),
 (410, 'Minecraft Marvels: Building Block by Block', 'Gaming', '2027-08-15', 600, 'MinecraftMarvelsBlock'),
