@@ -1,0 +1,37 @@
+-- Creating the user table
+CREATE TABLE users (
+    user_id INT PRIMARY KEY,
+    username VARCHAR(100)
+);
+
+-- Creating the Videos table
+CREATE TABLE videos (
+    video_id INT PRIMARY KEY,
+    title VARCHAR(255),
+    genre VARCHAR(100),
+    release_date DATE,
+    duration_seconds INT,
+    artist_or_youtuber VARCHAR(100)
+);
+
+-- Creating the watch history table
+CREATE TABLE watch_history (
+    history_id INT PRIMARY KEY,
+    user_id INT,
+    video_id INT,
+    watch_date DATETIME,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (video_id) REFERENCES videos(video_id)
+);
+
+-- Creating the Search History Table
+CREATE TABLE search_history (
+    search_id INT PRIMARY KEY,
+    user_id INT,
+    search_term VARCHAR(255),
+    search_date TIMESTAMP,
+    video_id INT, 
+    genre VARCHAR(100),  
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (video_id) REFERENCES videos(video_id)
+);
