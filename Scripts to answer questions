@@ -1,0 +1,29 @@
+-- WITHOUT TESTING Question 1
+SELECT
+    TO_CHAR(watch_date, 'HH24') AS watching_times,
+    COUNT(*) AS viewership_count
+FROM
+    watch_history
+GROUP BY
+    TO_CHAR(watch_date, 'HH24')
+ORDER BY
+    viewership_count DESC;
+
+
+--WITHOUT TESTING Question 2
+SELECT *
+FROM (
+    SELECT
+        v.title AS most_watched_video,
+        COUNT(*) AS watch_count,
+        MAX(h.watch_date) AS most_recent_watch_time
+    FROM
+        watch_history h
+    JOIN
+        videos v ON h.video_id = v.video_id
+    GROUP BY
+        v.title
+    ORDER BY
+        watch_count DESC
+)
+WHERE ROWNUM = 1;
