@@ -1,4 +1,4 @@
--- WITHOUT TESTING Question 1
+-- Question 1
 -- "What are the peak hours for viewership on YouTube?”
 SELECT
     TO_CHAR(watch_date, 'HH24') AS watching_times,
@@ -39,7 +39,7 @@ WA VIEWERSHIP_COUNT
 17 rows selected. 
 */
 
---WITHOUT TESTING Question 2
+-- Question 2
 -- “What are the most watched videos on YouTube and what time are they watched?” 
 
 SELECT *
@@ -397,17 +397,34 @@ ORDER BY
 */
 
 -- WITHOUT TESTING Question 7
--- “What are the most common trending genres watched?” 
+-- “What are the top 11 most popular trending genres watched?” 
 SELECT
-    genre,
-    SUM(views) AS total_views
+    v.genre AS most_popular,
+    count(h.User_id) AS total_views
 FROM
-    videos
+    watch_history h
+JOIN
+    videos v ON h.video_ID = v.video_ID
 GROUP BY
     genre
 ORDER BY
     total_views DESC;
-
+--Results
+/*
+MOST_POPULAR                                                                                         TOTAL_VIEWS
+---------------------------------------------------------------------------------------------------- -----------
+Gaming                                                                                                        53
+DIY                                                                                                           37
+Music                                                                                                         32
+Education                                                                                                     31
+Sports                                                                                                        30
+Entertainment                                                                                                 30
+Cooking                                                                                                       29
+Literature                                                                                                    28
+Comedy                                                                                                        26
+Art                                                                                                           24
+Fitness                                                                                                       24
+*/
 
 --WITHOUT TESTING Question 8
 -- “What type of video duration content are users mostly consuming?” 
