@@ -31,7 +31,9 @@ FROM (
 )
 WHERE ROWNUM = 1;
 
---WITHOUT TESTING Question 6
+-- Question 6
+--  “How does the genre of videos change during different times of the year?”
+
 SELECT
     EXTRACT(MONTH FROM release_date) AS month,
     genre,
@@ -45,7 +47,8 @@ ORDER BY
     EXTRACT(MONTH FROM release_date),
     genre;
 
---WITHOUT TESTING Question 7
+-- WITHOUT TESTING Question 7
+-- “What are the most common trending genres watched?” 
 SELECT
     genre,
     SUM(views) AS total_views
@@ -57,6 +60,7 @@ ORDER BY
     total_views DESC;
 
 --WITHOUT TESTING Question 8
+-- “What type of video duration content are users mostly consuming?” 
 SELECT
     u.user_id,
     u.username,
