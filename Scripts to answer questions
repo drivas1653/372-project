@@ -1,4 +1,5 @@
 -- WITHOUT TESTING Question 1
+-- "What are the peak hours for viewership on YouTube?”
 SELECT
     TO_CHAR(watch_date, 'HH24') AS watching_times,
     COUNT(*) AS viewership_count
@@ -11,6 +12,8 @@ ORDER BY
 
 
 --WITHOUT TESTING Question 2
+-- “What are the most watched videos on YouTube and what time are they watched?” 
+
 SELECT *
 FROM (
     SELECT
