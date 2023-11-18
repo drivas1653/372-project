@@ -1,504 +1,1504 @@
 -- Generate dummy data for Search History Table
 INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
-(1, 1, 'SQL Tutorial', CURRENT_TIMESTAMP, 1, 'Music'),
-(2, 2, 'Funny Animals', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(3, 3, 'Tech News', CURRENT_TIMESTAMP, 3, 'Technology'),
-(4, 4, 'Italian Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(5, 1, 'Space Exploration', CURRENT_TIMESTAMP, 3, 'Technology'),
-(6, 2, 'Healthy Cooking', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(7, 3, 'Gaming Tips', CURRENT_TIMESTAMP, 2, 'Gaming'),
-(8, 4, 'Nature Documentary', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(9, 5, 'DIY Home Improvement', CURRENT_TIMESTAMP, 3, 'DIY'),
-(10, 1, 'Classical Music Concert', CURRENT_TIMESTAMP, 1, 'Music'),
-(11, 2, 'Stand-up Comedy Special', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(12, 3, 'Latest Smartphones Review', CURRENT_TIMESTAMP, 3, 'Technology'),
-(13, 4, 'Mediterranean Cuisine', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(14, 5, 'Adventure Travel Destinations', CURRENT_TIMESTAMP, 2, 'Travel'),
-(15, 1, 'Rock Music Hits', CURRENT_TIMESTAMP, 1, 'Music'),
-(16, 2, 'Funny Prank Videos', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(17, 3, 'Programming Tutorials', CURRENT_TIMESTAMP, 3, 'Technology'),
-(18, 4, 'Baking Techniques', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(19, 5, 'History Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(20, 1, 'Pop Music Chart Toppers', CURRENT_TIMESTAMP, 1, 'Music'),
-(21, 2, 'Sketch Comedy Shows', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(22, 3, 'Virtual Reality Innovations', CURRENT_TIMESTAMP, 3, 'Technology'),
-(23, 4, 'Mexican Cuisine Cooking Class', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(24, 5, 'Art and Creativity Workshops', CURRENT_TIMESTAMP, 1, 'Art'),
-(25, 1, 'EDM Festival Highlights', CURRENT_TIMESTAMP, 1, 'Music'),
-(26, 2, 'Funny Dog Videos Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(27, 3, 'Latest Mobile Gaming Apps', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(28, 4, 'Vegetarian Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(29, 5, 'National Geographic Wildlife Specials', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(30, 1, 'Jazz Music Fusion Concert', CURRENT_TIMESTAMP, 1, 'Music'),
-(31, 2, 'Improv Comedy Shows', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(32, 3, 'AI and Machine Learning Explained', CURRENT_TIMESTAMP, 3, 'Technology'),
-(33, 4, 'Japanese Cuisine Sushi Masterclass', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(34, 5, 'Photography Tips and Tricks', CURRENT_TIMESTAMP, 1, 'Photography'),
-(35, 1, 'Alternative Rock Music Anthems', CURRENT_TIMESTAMP, 1, 'Music'),
-(36, 2, 'Satirical News Comedy', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(37, 3, 'Cryptocurrency Market Analysis', CURRENT_TIMESTAMP, 3, 'Finance'),
-(38, 4, 'Healthy Dessert Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(39, 5, 'Space Science and Exploration', CURRENT_TIMESTAMP, 1, 'Science'),
-(40, 1, 'Country Music Classics', CURRENT_TIMESTAMP, 1, 'Music'),
-(41, 2, 'Wholesome Family Comedy Shows', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(42, 3, 'Web Development Bootcamp', CURRENT_TIMESTAMP, 3, 'Technology'),
-(43, 4, 'Molecular Gastronomy Techniques', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(44, 5, 'Modern Art Exhibition Highlights', CURRENT_TIMESTAMP, 1, 'Art'),
-(45, 1, 'Indie Music Discoveries', CURRENT_TIMESTAMP, 1, 'Music'),
-(46, 2, 'Funny Cat Memes', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(47, 3, 'Latest Smartphone Trends', CURRENT_TIMESTAMP, 3, 'Technology'),
-(48, 4, 'French Pastry Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(49, 5, 'Travel Vlog Europe', CURRENT_TIMESTAMP, 2, 'Travel'),
-(50, 1, 'Oldies Music Classics', CURRENT_TIMESTAMP, 1, 'Music'),
-(51, 2, 'Stand-up Comedy Clips', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(52, 3, 'Artificial Intelligence Applications', CURRENT_TIMESTAMP, 3, 'Technology'),
-(53, 4, 'Mediterranean Diet Benefits', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(54, 5, 'Historical Architecture Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(55, 1, 'Electronic Dance Music Mix', CURRENT_TIMESTAMP, 1, 'Music'),
-(56, 2, 'Funny Sketches Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(57, 3, 'Top Mobile Games 2023', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(58, 4, 'Vegan Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(59, 5, 'SpaceX Rocket Launch', CURRENT_TIMESTAMP, 1, 'Science'),
-(60, 1, 'Blues Music Legends', CURRENT_TIMESTAMP, 1, 'Music'),
-(61, 2, 'Classic Comedy Films', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(62, 3, 'Augmented Reality Innovations', CURRENT_TIMESTAMP, 3, 'Technology'),
-(63, 4, 'Thai Cuisine Cooking Class', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(64, 5, 'Digital Art Workshops', CURRENT_TIMESTAMP, 1, 'Art'),
-(65, 1, 'Techno Music Festival Highlights', CURRENT_TIMESTAMP, 1, 'Music'),
-(66, 2, 'Cute Animal Videos Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(67, 3, 'Top Esports Strategies', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(68, 4, 'Gluten-Free Baking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(69, 5, 'Underwater Wildlife Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(70, 1, 'Funk Music Grooves', CURRENT_TIMESTAMP, 1, 'Music'),
-(71, 2, 'Family-friendly Comedy Show', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(72, 3, 'Quantum Computing Explained', CURRENT_TIMESTAMP, 3, 'Technology'),
-(73, 4, 'Sushi Rolling Techniques', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(74, 5, 'Photography Composition Tips', CURRENT_TIMESTAMP, 1, 'Photography'),
-(75, 1, 'Reggae Music Vibes', CURRENT_TIMESTAMP, 1, 'Music'),
-(76, 2, 'Classic Sitcoms Collection', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(77, 3, 'Personal Finance Tips', CURRENT_TIMESTAMP, 3, 'Finance'),
-(78, 4, 'Low-Carb Dessert Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(79, 5, 'NASA Space Exploration Updates', CURRENT_TIMESTAMP, 1, 'Science'),
-(80, 1, 'Bluegrass Music Jams', CURRENT_TIMESTAMP, 1, 'Music'),
-(81, 2, 'Feel-good Comedy Movies', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(82, 3, 'Web Design Best Practices', CURRENT_TIMESTAMP, 3, 'Technology'),
-(83, 4, 'French Cooking Masterclass', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(84, 5, 'Contemporary Art Exhibitions', CURRENT_TIMESTAMP, 1, 'Art'), 
-(85, 1, 'Gospel Music Worship', CURRENT_TIMESTAMP, 1, 'Music'),
-(86, 2, 'Classic Cartoon Episodes', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(87, 3, 'Future Technology Trends', CURRENT_TIMESTAMP, 3, 'Technology'),
-(88, 4, 'Molecular Mixology Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(89, 5, 'Solo Travel Tips', CURRENT_TIMESTAMP, 2, 'Travel'),
-(90, 1, 'R&B Music Slow Jams', CURRENT_TIMESTAMP, 1, 'Music'),
-(91, 2, 'Stand-up Comedy Specials 2023', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(92, 3, 'Cybersecurity Basics', CURRENT_TIMESTAMP, 3, 'Technology'),
-(93, 4, 'French Cuisine Desserts', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(94, 5, 'Ancient History Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(95, 1, 'Trance Music Mix', CURRENT_TIMESTAMP, 1, 'Music'),
-(96, 2, 'Funny Pet Bloopers', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(97, 3, 'Top Mobile Games Reviews', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(98, 4, 'Plant-Based Cooking Ideas', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(99, 5, 'Space Travel Explained', CURRENT_TIMESTAMP, 1, 'Science'),
-(100, 1, 'Soul Music Classics', CURRENT_TIMESTAMP, 1, 'Music'),
-(101, 2, 'Classic Comedy Sketches', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(102, 3, 'Blockchain Technology Insights', CURRENT_TIMESTAMP, 3, 'Technology'),
-(103, 4, 'Japanese Street Food Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(104, 5, 'Abstract Art Workshop', CURRENT_TIMESTAMP, 1, 'Art'),
-(105, 1, 'EDM Remixes Collection', CURRENT_TIMESTAMP, 1, 'Music'),
-(106, 2, 'Funny Improv Moments', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(107, 3, 'Mobile Gaming Strategies', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(108, 4, 'Gluten-Free Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(109, 5, 'Wildlife Conservation Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(110, 1, 'Fusion Jazz Music', CURRENT_TIMESTAMP, 1, 'Music'),
-(111, 2, 'Family Movie Night Comedy', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(112, 3, 'Artificial General Intelligence', CURRENT_TIMESTAMP, 3, 'Technology'),
-(113, 4, 'Sushi Artistry Techniques', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(114, 5, 'Digital Painting Tips', CURRENT_TIMESTAMP, 1, 'Art'),
-(115, 1, 'Island Music Vibes', CURRENT_TIMESTAMP, 1, 'Music'),
-(116, 2, 'Classic Stand-up Comedy Specials', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(117, 3, 'Personal Finance Strategies', CURRENT_TIMESTAMP, 3, 'Finance'),
-(118, 4, 'Low-Sugar Dessert Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(119, 5, 'NASA Astronomy Updates', CURRENT_TIMESTAMP, 1, 'Science'),
-(120, 1, 'Bluegrass Music Festivals', CURRENT_TIMESTAMP, 1, 'Music'),
-(121, 2, 'Family Comedy Series', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(122, 3, 'User Interface Design Principles', CURRENT_TIMESTAMP, 3, 'Technology'),
-(123, 4, 'Italian Gelato Making Class', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(124, 5, 'Modern Sculpture Exhibitions', CURRENT_TIMESTAMP, 1, 'Art'), 
-(125, 1, 'Motivational Speeches', CURRENT_TIMESTAMP, 1, 'Motivation'),
-(126, 2, 'Prank Call Videos', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(127, 3, 'Latest Smartphone Reviews', CURRENT_TIMESTAMP, 3, 'Technology'),
-(128, 4, 'Mexican Street Food Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(129, 5, 'Adventure Travel Tips', CURRENT_TIMESTAMP, 2, 'Travel'),
-(130, 1, 'Instrumental Jazz Music', CURRENT_TIMESTAMP, 1, 'Music'),
-(131, 2, 'Classic Comedy Clips', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(132, 3, 'Future of Robotics', CURRENT_TIMESTAMP, 3, 'Technology'),
-(133, 4, 'Indian Cuisine Cooking Class', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(134, 5, 'Science and Nature Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(135, 1, 'Electronic Music Production Tutorials', CURRENT_TIMESTAMP, 1, 'Music'),
-(136, 2, 'Funny Vine Compilations', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(137, 3, 'Mobile Gaming News', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(138, 4, 'Vegetarian Cooking Hacks', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(139, 5, 'Astronomy and Astrophysics Lectures', CURRENT_TIMESTAMP, 1, 'Science'),
-(140, 1, 'Smooth Jazz Music', CURRENT_TIMESTAMP, 1, 'Music'),
-(141, 2, 'Classic Cartoon Bloopers', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(142, 3, 'Quantum Computing Applications', CURRENT_TIMESTAMP, 3, 'Technology'),
-(143, 4, 'French Dessert Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(144, 5, 'Modern Art Installations', CURRENT_TIMESTAMP, 1, 'Art'),
-(145, 1, 'Techno Remixes Collection', CURRENT_TIMESTAMP, 1, 'Music'),
-(146, 2, 'Funny Cat Fails', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(147, 3, 'Top Esports News', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(148, 4, 'Low-Calorie Cooking Ideas', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(149, 5, 'Underwater Photography Tips', CURRENT_TIMESTAMP, 1, 'Photography'),
-(150, 1, 'Reggae Music Party Mix', CURRENT_TIMESTAMP, 1, 'Music'),
-(151, 2, 'Classic Sitcom Moments', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(152, 3, 'Cryptocurrency Investment Tips', CURRENT_TIMESTAMP, 3, 'Finance'),
-(153, 4, 'Healthy Smoothie Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(154, 5, 'Space Exploration Updates', CURRENT_TIMESTAMP, 1, 'Science'),
-(155, 1, 'Country Music Roadtrip Playlist', CURRENT_TIMESTAMP, 1, 'Music'),
-(156, 2, 'Family-friendly Comedy Specials', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(157, 3, 'Web Development Frameworks', CURRENT_TIMESTAMP, 3, 'Technology'),
-(158, 4, 'Japanese Cooking Techniques', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(159, 5, 'Contemporary Photography Exhibitions', CURRENT_TIMESTAMP, 1, 'Photography'),
-(160, 1, 'Gospel Music Worship Experience', CURRENT_TIMESTAMP, 1, 'Music'),
-(161, 2, 'Classic Comedy Duos', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(162, 3, 'Personal Finance for Beginners', CURRENT_TIMESTAMP, 3, 'Finance'),
-(163, 4, 'Gluten-Free Baking Ideas', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(164, 5, 'NASA Space Science Updates', CURRENT_TIMESTAMP, 1, 'Science'),
-(165, 1, 'Motivational Podcasts', CURRENT_TIMESTAMP, 1, 'Motivation'),
-(166, 2, 'Funny Moments Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(167, 3, 'Latest Tech Gadgets', CURRENT_TIMESTAMP, 3, 'Technology'),
-(168, 4, 'Greek Cuisine Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(169, 5, 'Budget Travel Tips', CURRENT_TIMESTAMP, 2, 'Travel'),
-(170, 1, 'Chillhop Music Playlist', CURRENT_TIMESTAMP, 1, 'Music'),
-(171, 2, 'Classic Comedy Monologues', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(172, 3, 'Future of Artificial Intelligence', CURRENT_TIMESTAMP, 3, 'Technology'),
-(173, 4, 'Japanese Sweets Making Class', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(174, 5, 'Nature Conservation Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(175, 1, 'Synthwave Music Mix', CURRENT_TIMESTAMP, 1, 'Music'),
-(176, 2, 'Funny Animal Vines', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(177, 3, 'Mobile Gaming Reviews', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(178, 4, 'Plant-Based Cooking Inspiration', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(179, 5, 'Outer Space Exploration Documentaries', CURRENT_TIMESTAMP, 1, 'Science'),
-(180, 1, 'Smooth R&B Music', CURRENT_TIMESTAMP, 1, 'Music'),
-(181, 2, 'Classic Comedy Skits', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(182, 3, 'Quantum Computing Developments', CURRENT_TIMESTAMP, 3, 'Technology'),
-(183, 4, 'Italian Gelato Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(184, 5, 'Modern Sculpture Art Exhibitions', CURRENT_TIMESTAMP, 1, 'Art'),
-(185, 1, 'Trance Music Anthems', CURRENT_TIMESTAMP, 1, 'Music'),
-(186, 2, 'Funny Pet Videos Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(187, 3, 'Top Mobile Games Updates', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(188, 4, 'Vegetarian Cooking Essentials', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(189, 5, 'Astronomy Discoveries Documentaries', CURRENT_TIMESTAMP, 1, 'Science'),
-(190, 1, 'Soulful Jazz Music', CURRENT_TIMESTAMP, 1, 'Music'),
-(191, 2, 'Classic Comedy Clips Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(192, 3, 'Cryptocurrency Market Trends', CURRENT_TIMESTAMP, 3, 'Finance'),
-(193, 4, 'Low-Carb Cooking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(194, 5, 'Underwater Photography Techniques', CURRENT_TIMESTAMP, 1, 'Photography'),
-(195, 1, 'Reggae Music Classics', CURRENT_TIMESTAMP, 1, 'Music'),
-(196, 2, 'Classic Sitcom Bloopers', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(197, 3, 'Personal Finance Insights', CURRENT_TIMESTAMP, 3, 'Finance'),
-(198, 4, 'Healthy Dessert Ideas', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(199, 5, 'NASA Space Exploration Highlights', CURRENT_TIMESTAMP, 1, 'Science'),
-(200, 1, 'Bluegrass Music Favorites', CURRENT_TIMESTAMP, 1, 'Music'),
-(201, 2, 'Family Comedy Specials Marathon', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(202, 3, 'Web Development Tools', CURRENT_TIMESTAMP, 3, 'Technology'),
-(203, 4, 'Japanese Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(204, 5, 'Contemporary Photography Trends', CURRENT_TIMESTAMP, 1, 'Photography'),
-(205, 1, 'Motivational TED Talks', CURRENT_TIMESTAMP, 1, 'Motivation'),
-(206, 2, 'Funny Cat Moments', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(207, 3, 'Latest Tech Innovations', CURRENT_TIMESTAMP, 3, 'Technology'),
-(208, 4, 'Spanish Tapas Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(209, 5, 'Exotic Travel Destinations', CURRENT_TIMESTAMP, 2, 'Travel'),
-(210, 1, 'Lofi Beats for Studying', CURRENT_TIMESTAMP, 1, 'Music'),
-(211, 2, 'Classic Comedy Scenes', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(212, 3, 'Future of Quantum Computing', CURRENT_TIMESTAMP, 3, 'Technology'),
-(213, 4, 'Sushi Rolling Masterclass', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(214, 5, 'Nature and Wildlife Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(215, 1, 'Synthpop Music Mix', CURRENT_TIMESTAMP, 1, 'Music'),
-(216, 2, 'Funny Dog Vlogs', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(217, 3, 'Mobile Gaming Strategies', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(218, 4, 'Vegan Cooking Challenges', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(219, 5, 'Space Science Lectures', CURRENT_TIMESTAMP, 1, 'Science'),
-(220, 1, 'Jazz Fusion Music', CURRENT_TIMESTAMP, 1, 'Music'),
-(221, 2, 'Classic Comedy Moments', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(222, 3, 'Blockchain Technology Explained', CURRENT_TIMESTAMP, 3, 'Technology'),
-(223, 4, 'French Pastry Baking Class', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(224, 5, 'Modern Art Galleries Tour', CURRENT_TIMESTAMP, 1, 'Art'),
-(225, 1, 'Chillstep Music Playlist', CURRENT_TIMESTAMP, 1, 'Music'),
-(226, 2, 'Funny Pranks Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(227, 3, 'Top Mobile Games Strategies', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(228, 4, 'Vegetarian Cooking Masterclass', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(229, 5, 'Astronomy and Astrophysics Documentaries', CURRENT_TIMESTAMP, 1, 'Science'),
-(230, 1, 'Smooth Hip Hop Beats', CURRENT_TIMESTAMP, 1, 'Music'),
-(231, 2, 'Classic Comedy Sketch Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(232, 3, 'Cryptocurrency Market Updates', CURRENT_TIMESTAMP, 3, 'Finance'),
-(233, 4, 'Low-Sodium Cooking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(234, 5, 'Underwater Photography Inspiration', CURRENT_TIMESTAMP, 1, 'Photography'),
-(235, 1, 'Reggae Music Vibes Playlist', CURRENT_TIMESTAMP, 1, 'Music'),
-(236, 2, 'Classic Sitcom Highlights', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(237, 3, 'Personal Finance Strategies for Beginners', CURRENT_TIMESTAMP, 3, 'Finance'),
-(238, 4, 'Healthy Dessert Alternatives', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(239, 5, 'NASA Space Exploration Insights', CURRENT_TIMESTAMP, 1, 'Science'),
-(240, 1, 'Bluegrass Music Jam Session', CURRENT_TIMESTAMP, 1, 'Music'),
-(241, 2, 'Family Comedy Series Marathon', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(242, 3, 'Web Development Trends', CURRENT_TIMESTAMP, 3, 'Technology'),
-(243, 4, 'Japanese Cuisine Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(244, 5, 'Contemporary Photography Exhibitions Highlights', CURRENT_TIMESTAMP, 1, 'Photography'),
-(245, 1, 'Motivational Audiobooks', CURRENT_TIMESTAMP, 1, 'Motivation'),
-(246, 2, 'Funny Animal Antics', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(247, 3, 'Latest Tech Trends', CURRENT_TIMESTAMP, 3, 'Technology'),
-(248, 4, 'Mediterranean Cooking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(249, 5, 'Solo Adventure Travel', CURRENT_TIMESTAMP, 2, 'Travel'),
-(250, 1, 'Ambient Music for Relaxation', CURRENT_TIMESTAMP, 1, 'Music'),
-(251, 2, 'Classic Comedy Stand-up Shows', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(252, 3, 'Future of Robotics and AI', CURRENT_TIMESTAMP, 3, 'Technology'),
-(253, 4, 'Japanese Ramen Cooking Class', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(254, 5, 'Wildlife Conservation Insights', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(255, 1, 'Chillout Music Mix', CURRENT_TIMESTAMP, 1, 'Music'),
-(256, 2, 'Funny Animal Memes Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(257, 3, 'Mobile Gaming Tips and Tricks', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(258, 4, 'Plant-Based Cooking Workshop', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(259, 5, 'Space Exploration Documentaries', CURRENT_TIMESTAMP, 1, 'Science'),
-(260, 1, 'Classic Jazz Music Standards', CURRENT_TIMESTAMP, 1, 'Music'),
-(261, 2, 'Classic Comedy Movies Marathon', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(262, 3, 'Blockchain and Cryptocurrency Explained', CURRENT_TIMESTAMP, 3, 'Finance'),
-(263, 4, 'French Patisserie Baking Class', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(264, 5, 'Modern Art Installations Showcase', CURRENT_TIMESTAMP, 1, 'Art'),
-(265, 1, 'Lo-fi Hip Hop Music Playlist', CURRENT_TIMESTAMP, 1, 'Music'),
-(266, 2, 'Funny Pet Bloopers Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(267, 3, 'Top Mobile Games Reviews 2023', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(268, 4, 'Vegetarian Cooking Challenges', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(269, 5, 'Astronomy and Astrophysics Discoveries', CURRENT_TIMESTAMP, 1, 'Science'),
-(270, 1, 'Smooth R&B Music Mix', CURRENT_TIMESTAMP, 1, 'Music'),
-(271, 2, 'Classic Comedy Sketch Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(272, 3, 'Cryptocurrency Market Trends 2023', CURRENT_TIMESTAMP, 3, 'Finance'),
-(273, 4, 'Low-Carb Cooking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(274, 5, 'Underwater Photography Inspiration', CURRENT_TIMESTAMP, 1, 'Photography'),
-(275, 1, 'Reggae Music Vibes Playlist', CURRENT_TIMESTAMP, 1, 'Music'),
-(276, 2, 'Classic Sitcom Highlights Marathon', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(277, 3, 'Personal Finance Strategies for Beginners', CURRENT_TIMESTAMP, 3, 'Finance'),
-(278, 4, 'Healthy Dessert Alternatives', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(279, 5, 'NASA Space Exploration Insights', CURRENT_TIMESTAMP, 1, 'Science'),
-(280, 1, 'Bluegrass Music Jam Session', CURRENT_TIMESTAMP, 1, 'Music'),
-(281, 2, 'Family Comedy Series Marathon', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(282, 3, 'Web Development Trends', CURRENT_TIMESTAMP, 3, 'Technology'),
-(283, 4, 'Japanese Cuisine Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(284, 5, 'Contemporary Photography Exhibitions Highlights', CURRENT_TIMESTAMP, 1, 'Photography'),
-(285, 1, 'Motivational Podcasts 2023', CURRENT_TIMESTAMP, 1, 'Motivation'),
-(286, 2, 'Funny Animal Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(287, 3, 'Latest Tech News', CURRENT_TIMESTAMP, 3, 'Technology'),
-(288, 4, 'Italian Pasta Recipes', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(289, 5, 'Budget-friendly Travel Destinations', CURRENT_TIMESTAMP, 2, 'Travel'),
-(290, 1, 'Lofi Chillhop Beats', CURRENT_TIMESTAMP, 1, 'Music'),
-(291, 2, 'Classic Comedy Shows', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(292, 3, 'Future of Quantum Computing', CURRENT_TIMESTAMP, 3, 'Technology'),
-(293, 4, 'Sushi Making Workshop', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(294, 5, 'Wildlife Conservation Documentaries 2023', CURRENT_TIMESTAMP, 1, 'Documentary'),
-(295, 1, 'Synthwave Music Mix 2023', CURRENT_TIMESTAMP, 1, 'Music'),
-(296, 2, 'Funny Dog Moments Compilation', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(297, 3, 'Mobile Gaming Tips and Tricks 2023', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(298, 4, 'Plant-Based Cooking Challenge', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(299, 5, 'Space Exploration Insights', CURRENT_TIMESTAMP, 1, 'Science'),
-(300, 1, 'Classic Jazz Standards Playlist', CURRENT_TIMESTAMP, 1, 'Music'),
-(301, 2, 'Classic Comedy Movies 2023 Marathon', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(302, 3, 'Blockchain and Cryptocurrency Explained 2023', CURRENT_TIMESTAMP, 3, 'Finance'),
-(303, 4, 'French Pastry Baking Class 2023', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(304, 5, 'Modern Art Installations Showcase 2023', CURRENT_TIMESTAMP, 1, 'Art'),
-(305, 1, 'Lo-fi Hip Hop Beats for Studying', CURRENT_TIMESTAMP, 1, 'Music'),
-(306, 2, 'Funny Cat Videos Compilation 2023', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(307, 3, 'Top Mobile Games Reviews 2023', CURRENT_TIMESTAMP, 3, 'Gaming'),
-(308, 4, 'Vegetarian Cooking Masterclass 2023', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(309, 5, 'Astronomy and Astrophysics Discoveries 2023', CURRENT_TIMESTAMP, 1, 'Science'),
-(310, 1, 'Smooth R&B Music Mix 2023', CURRENT_TIMESTAMP, 1, 'Music'),
-(311, 2, 'Classic Comedy Sketch Compilation 2023', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(312, 3, 'Cryptocurrency Market Trends 2023', CURRENT_TIMESTAMP, 3, 'Finance'),
-(313, 4, 'Low-Carb Cooking Recipes 2023', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(314, 5, 'Underwater Photography Inspiration 2023', CURRENT_TIMESTAMP, 1, 'Photography'),
-(315, 1, 'Reggae Music Vibes Playlist 2023', CURRENT_TIMESTAMP, 1, 'Music'),
-(316, 2, 'Classic Sitcom Highlights Marathon 2023', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(317, 3, 'Personal Finance Strategies for Beginners 2023', CURRENT_TIMESTAMP, 3, 'Finance'),
-(318, 4, 'Healthy Dessert Alternatives 2023', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(319, 5, 'NASA Space Exploration Insights 2023', CURRENT_TIMESTAMP, 1, 'Science'),
-(320, 1, 'Bluegrass Music Jam Session 2023', CURRENT_TIMESTAMP, 1, 'Music'),
-(321, 2, 'Family Comedy Series Marathon 2023', CURRENT_TIMESTAMP, 2, 'Comedy'),
-(322, 3, 'Web Development Trends 2023', CURRENT_TIMESTAMP, 3, 'Technology'),
-(323, 4, 'Japanese Cuisine Cooking Tips 2023', CURRENT_TIMESTAMP, 4, 'Cooking'),
-(324, 5, 'Contemporary Photography Exhibitions Highlights 2023', CURRENT_TIMESTAMP, 1, 'Photography'),
-(325, 156, 'Sci-Fi Movie Recommendations', CURRENT_TIMESTAMP, 296, 'Science Fiction'),
-(326, 278, 'Healthy Vegan Recipes', CURRENT_TIMESTAMP, 295, 'Cooking'),
-(327, 412, 'Travel Destinations 2023', CURRENT_TIMESTAMP, 297, 'Travel'),
-(328, 89, 'Stand-up Comedy Specials', CURRENT_TIMESTAMP, 298, 'Comedy'),
-(329, 221, 'Guitar Lessons for Beginners', CURRENT_TIMESTAMP, 299, 'Music'),
-(330, 364, 'Game Reviews 2023', CURRENT_TIMESTAMP, 300, 'Gaming'),
-(331, 47, 'Artificial Intelligence Explained', CURRENT_TIMESTAMP, 301, 'Technology'),
-(332, 193, 'Mindfulness Meditation Techniques', CURRENT_TIMESTAMP, 302, 'Health and Wellness'),
-(333, 442, 'Historical Documentaries', CURRENT_TIMESTAMP, 303, 'History'),
-(334, 108, 'Space Exploration News', CURRENT_TIMESTAMP, 304, 'Science'),
-(335, 276, 'DIY Home Improvement Ideas', CURRENT_TIMESTAMP, 305, 'Home and Garden'),
-(336, 397, 'Digital Marketing Strategies', CURRENT_TIMESTAMP, 306, 'Business'),
-(337, 134, 'Italian Language Learning Tips', CURRENT_TIMESTAMP, 307, 'Language Learning'),
-(338, 260, 'Virtual Reality Gaming Experiences', CURRENT_TIMESTAMP, 308, 'Gaming'),
-(339, 393, 'Yoga for Beginners', CURRENT_TIMESTAMP, 309, 'Health and Wellness'),
-(340, 168, 'Film Noir Classics', CURRENT_TIMESTAMP, 310, 'Film Noir'),
-(341, 481, 'Photography Editing Tutorials', CURRENT_TIMESTAMP, 311, 'Photography'),
-(342, 55, 'Book Recommendations 2023', CURRENT_TIMESTAMP, 312, 'Literature'),
-(343, 307, 'Science Podcasts', CURRENT_TIMESTAMP, 313, 'Science'),
-(344, 172, 'Vegetarian Cooking Classes', CURRENT_TIMESTAMP, 314, 'Cooking'),
-(345, 438, 'Travel Vlogging Tips', CURRENT_TIMESTAMP, 315, 'Travel'),
-(346, 95, 'Stand-up Comedy Shows 2023', CURRENT_TIMESTAMP, 316, 'Comedy'),
-(347, 243, 'Rock Music History', CURRENT_TIMESTAMP, 317, 'Music'),
-(348, 379, 'RPG Game Strategies', CURRENT_TIMESTAMP, 318, 'Gaming'),
-(349, 116, 'AI in Healthcare', CURRENT_TIMESTAMP, 319, 'Technology'),
-(350, 289, 'Mental Health Awareness', CURRENT_TIMESTAMP, 320, 'Health and Wellness'),
-(351, 55, 'World War II Documentaries', CURRENT_TIMESTAMP, 321, 'History'),
-(352, 211, 'Astrophysics Explained', CURRENT_TIMESTAMP, 322, 'Science'),
-(353, 444, 'Urban Gardening Tips', CURRENT_TIMESTAMP, 323, 'Home and Garden'),
-(354, 179, 'Social Media Marketing Trends', CURRENT_TIMESTAMP, 324, 'Business'),
-(355, 322, 'Japanese Anime Recommendations', CURRENT_TIMESTAMP, 325, 'Anime'),
-(356, 167, 'Mexican Cuisine Cooking Classes', CURRENT_TIMESTAMP, 326, 'Cooking'),
-(357, 408, 'Top 10 Beach Destinations', CURRENT_TIMESTAMP, 327, 'Travel'),
-(358, 53, 'Stand-up Comedy Specials 2023', CURRENT_TIMESTAMP, 328, 'Comedy'),
-(359, 214, 'Piano Lessons for Beginners', CURRENT_TIMESTAMP, 329, 'Music'),
-(360, 357, 'Strategy Game Reviews', CURRENT_TIMESTAMP, 330, 'Gaming'),
-(361, 63, 'Blockchain Technology Explained', CURRENT_TIMESTAMP, 331, 'Technology'),
-(362, 198, 'Wellness Retreats Near Me', CURRENT_TIMESTAMP, 332, 'Health and Wellness'),
-(363, 437, 'Ancient Civilizations Documentaries', CURRENT_TIMESTAMP, 333, 'History'),
-(364, 102, 'Latest Space Exploration Discoveries', CURRENT_TIMESTAMP, 334, 'Science'),
-(365, 276, 'Interior Design DIY Projects', CURRENT_TIMESTAMP, 335, 'Home and Garden'),
-(366, 391, 'E-commerce Business Strategies', CURRENT_TIMESTAMP, 336, 'Business'),
-(367, 127, 'French Language Learning Tips', CURRENT_TIMESTAMP, 337, 'Language Learning'),
-(368, 253, 'Augmented Reality Gaming Trends', CURRENT_TIMESTAMP, 338, 'Gaming'),
-(369, 388, 'Mind-Body Connection Exercises', CURRENT_TIMESTAMP, 339, 'Health and Wellness'),
-(370, 162, 'Classic Hollywood Movies', CURRENT_TIMESTAMP, 340, 'Film'),
-(371, 472, 'Advanced Photography Techniques', CURRENT_TIMESTAMP, 341, 'Photography'),
-(372, 77, 'Science Fiction Book Recommendations', CURRENT_TIMESTAMP, 342, 'Literature'),
-(373, 313, 'Space and Astronomy Podcasts', CURRENT_TIMESTAMP, 343, 'Science'),
-(374, 182, 'Plant-Based Cooking Classes', CURRENT_TIMESTAMP, 344, 'Cooking'),
-(375, 448, 'Adventure Travel Destinations', CURRENT_TIMESTAMP, 345, 'Travel'),
-(376, 104, 'Top Comedy Shows 2023', CURRENT_TIMESTAMP, 346, 'Comedy'),
-(377, 266, 'Electronic Dance Music History', CURRENT_TIMESTAMP, 347, 'Music'),
-(378, 383, 'MMORPG Game Strategies', CURRENT_TIMESTAMP, 348, 'Gaming'),
-(379, 139, 'Ethical Hacking Basics', CURRENT_TIMESTAMP, 349, 'Technology'),
-(380, 295, 'Holistic Health Practices', CURRENT_TIMESTAMP, 350, 'Health and Wellness'),
-(381, 83, 'World War I Documentaries', CURRENT_TIMESTAMP, 351, 'History'),
-(382, 217, 'Quantum Physics Explained', CURRENT_TIMESTAMP, 352, 'Science'),
-(383, 452, 'Sustainable Gardening Tips', CURRENT_TIMESTAMP, 353, 'Home and Garden'),
-(384, 189, 'Social Media Influencer Marketing', CURRENT_TIMESTAMP, 354, 'Business'),
-(385, 234, 'Korean Language Learning Resources', CURRENT_TIMESTAMP, 355, 'Language Learning'),
-(386, 379, 'Virtual Reality Art Exhibitions', CURRENT_TIMESTAMP, 356, 'Art'),
-(387, 144, 'Time Management Strategies', CURRENT_TIMESTAMP, 357, 'Self-Help'),
-(388, 322, 'Outdoor Photography Techniques', CURRENT_TIMESTAMP, 358, 'Photography'),
-(389, 54, 'Classic Literature Books', CURRENT_TIMESTAMP, 359, 'Literature'),
-(390, 298, 'Environmental Science Podcasts', CURRENT_TIMESTAMP, 360, 'Science'),
-(391, 168, 'Vegetarian Meal Prep Recipes', CURRENT_TIMESTAMP, 361, 'Cooking'),
-(392, 464, 'Road Trip Planning Tips', CURRENT_TIMESTAMP, 362, 'Travel'),
-(393, 109, 'Political Satire Comedy Shows', CURRENT_TIMESTAMP, 363, 'Comedy'),
-(394, 377, 'Anime Series Marathon', CURRENT_TIMESTAMP, 364, 'Anime'),
-(395, 112, 'Mediterranean Cuisine Cooking Tips', CURRENT_TIMESTAMP, 365, 'Cooking'),
-(396, 277, 'European Travel Destinations', CURRENT_TIMESTAMP, 366, 'Travel'),
-(397, 47, '2023 Comedy Specials', CURRENT_TIMESTAMP, 367, 'Comedy'),
-(398, 210, 'Learn to Play the Saxophone', CURRENT_TIMESTAMP, 368, 'Music'),
-(399, 355, 'Open-World Game Reviews', CURRENT_TIMESTAMP, 369, 'Gaming'),
-(400, 67, 'Cybersecurity Basics', CURRENT_TIMESTAMP, 370, 'Technology'),
-(401, 193, 'Mindful Eating Practices', CURRENT_TIMESTAMP, 371, 'Health and Wellness'),
-(402, 438, 'Ancient History Documentaries', CURRENT_TIMESTAMP, 372, 'History'),
-(403, 104, 'Mars Exploration Updates', CURRENT_TIMESTAMP, 373, 'Science'),
-(404, 289, 'DIY Indoor Garden Ideas', CURRENT_TIMESTAMP, 374, 'Home and Garden'),
-(405, 394, 'E-commerce Success Stories', CURRENT_TIMESTAMP, 375, 'Business'),
-(406, 155, 'Spanish Language Learning Tips', CURRENT_TIMESTAMP, 376, 'Language Learning'),
-(407, 268, 'Virtual Reality Game Development', CURRENT_TIMESTAMP, 377, 'Gaming'),
-(408, 383, 'Mindfulness Meditation Techniques', CURRENT_TIMESTAMP, 378, 'Health and Wellness'),
-(409, 158, 'Classic Film Noir Recommendations', CURRENT_TIMESTAMP, 379, 'Film Noir'),
-(410, 472, 'Advanced Photography Editing', CURRENT_TIMESTAMP, 380, 'Photography'),
-(411, 83, 'Science Fiction Literature Classics', CURRENT_TIMESTAMP, 381, 'Literature'),
-(412, 319, 'Space Exploration Podcasts', CURRENT_TIMESTAMP, 382, 'Science'),
-(413, 172, 'Plant-Based Cooking for Beginners', CURRENT_TIMESTAMP, 383, 'Cooking'),
-(414, 448, 'Island Hopping Travel Adventures', CURRENT_TIMESTAMP, 384, 'Travel'),
-(415, 105, '2023 Stand-up Comedy Shows', CURRENT_TIMESTAMP, 385, 'Comedy'),
-(416, 266, 'History of Electronic Dance Music', CURRENT_TIMESTAMP, 386, 'Music'),
-(417, 391, 'MMORPG Gaming Community Tips', CURRENT_TIMESTAMP, 387, 'Gaming'),
-(418, 140, 'Introduction to Artificial Intelligence', CURRENT_TIMESTAMP, 388, 'Technology'),
-(419, 295, 'Holistic Health and Wellness Practices', CURRENT_TIMESTAMP, 389, 'Health and Wellness'),
-(420, 83, 'Ancient Greece History Documentaries', CURRENT_TIMESTAMP, 390, 'History'),
-(421, 217, 'Quantum Mechanics Explained', CURRENT_TIMESTAMP, 391, 'Science'),
-(422, 452, 'Balcony Gardening Tips', CURRENT_TIMESTAMP, 392, 'Home and Garden'),
-(423, 189, 'Social Media Content Creation Strategies', CURRENT_TIMESTAMP, 393, 'Business'),
-(424, 234, 'Advanced Korean Language Learning', CURRENT_TIMESTAMP, 394, 'Language Learning'),
-(425, 379, 'Virtual Reality Art Installations', CURRENT_TIMESTAMP, 395, 'Art'),
-(426, 144, 'Personal Development Books', CURRENT_TIMESTAMP, 396, 'Self-Help'),
-(427, 322, 'Portrait Photography Techniques', CURRENT_TIMESTAMP, 397, 'Photography'),
-(428, 54, 'Science Fiction Literature Classics', CURRENT_TIMESTAMP, 398, 'Literature'),
-(429, 298, 'Environmental Science Podcasts', CURRENT_TIMESTAMP, 399, 'Science'),
-(430, 168, 'Healthy Vegetarian Recipes', CURRENT_TIMESTAMP, 400, 'Cooking'),
-(431, 464, 'Solo Travel Planning Tips', CURRENT_TIMESTAMP, 401, 'Travel'),
-(432, 109, 'Political Satire Comedy Shows', CURRENT_TIMESTAMP, 402, 'Comedy'), 
-(433, 377, 'Anime Recommendations for Beginners', CURRENT_TIMESTAMP, 403, 'Anime'),
-(434, 112, 'Molecular Gastronomy Techniques', CURRENT_TIMESTAMP, 404, 'Cooking'),
-(435, 277, 'Road Trip Destinations in Europe', CURRENT_TIMESTAMP, 405, 'Travel'),
-(436, 47, '2023 Stand-up Comedy Specials', CURRENT_TIMESTAMP, 406, 'Comedy'),
-(437, 210, 'Learn to Play the Violin', CURRENT_TIMESTAMP, 407, 'Music'),
-(438, 355, 'Open-World Game Strategies', CURRENT_TIMESTAMP, 408, 'Gaming'),
-(439, 67, 'Data Science and Machine Learning', CURRENT_TIMESTAMP, 409, 'Technology'),
-(440, 193, 'Mindful Eating Habits', CURRENT_TIMESTAMP, 410, 'Health and Wellness'),
-(441, 438, 'Ancient Rome History Documentaries', CURRENT_TIMESTAMP, 411, 'History'),
-(442, 104, 'NASA Mars Rover Updates', CURRENT_TIMESTAMP, 412, 'Science'),
-(443, 289, 'Urban Gardening DIY Projects', CURRENT_TIMESTAMP, 413, 'Home and Garden'),
-(444, 394, 'E-commerce Marketing Strategies', CURRENT_TIMESTAMP, 414, 'Business'),
-(445, 155, 'Italian Language Learning Tips', CURRENT_TIMESTAMP, 415, 'Language Learning'),
-(446, 268, 'VR Game Development Tutorials', CURRENT_TIMESTAMP, 416, 'Gaming'),
-(447, 383, 'Mindful Meditation for Stress Relief', CURRENT_TIMESTAMP, 417, 'Health and Wellness'),
-(448, 158, 'Classic Film Recommendations', CURRENT_TIMESTAMP, 418, 'Film'),
-(449, 472, 'Advanced Photography Editing Techniques', CURRENT_TIMESTAMP, 419, 'Photography'),
-(450, 83, 'Classic Science Fiction Books', CURRENT_TIMESTAMP, 420, 'Literature'),
-(451, 319, 'Space Exploration Podcasts', CURRENT_TIMESTAMP, 421, 'Science'),
-(452, 172, 'Vegan Cooking Classes', CURRENT_TIMESTAMP, 422, 'Cooking'),
-(453, 448, 'Culinary Travel Adventures', CURRENT_TIMESTAMP, 423, 'Travel'),
-(454, 105, '2023 Comedy Shows', CURRENT_TIMESTAMP, 424, 'Comedy'),
-(455, 266, 'History of Electronic Dance Music', CURRENT_TIMESTAMP, 425, 'Music'),
-(456, 391, 'MMORPG Game Reviews', CURRENT_TIMESTAMP, 426, 'Gaming'),
-(457, 140, 'AI and Ethics', CURRENT_TIMESTAMP, 427, 'Technology'),
-(458, 295, 'Holistic Health Practices', CURRENT_TIMESTAMP, 428, 'Health and Wellness'),
-(459, 83, 'World War II History Documentaries', CURRENT_TIMESTAMP, 429, 'History'),
-(460, 217, 'Quantum Physics Explained', CURRENT_TIMESTAMP, 430, 'Science'),
-(461, 452, 'Small-Space Gardening Tips', CURRENT_TIMESTAMP, 431, 'Home and Garden'),
-(462, 189, 'Social Media Marketing Tips for Small Businesses', CURRENT_TIMESTAMP, 432, 'Business'),
-(463, 234, 'Intermediate Korean Language Learning', CURRENT_TIMESTAMP, 433, 'Language Learning'),
-(464, 379, 'VR Art Installations Showcase', CURRENT_TIMESTAMP, 434, 'Art'),
-(465, 144, 'Self-Improvement Books', CURRENT_TIMESTAMP, 435, 'Self-Help'),
-(466, 322, 'Nature Photography Techniques', CURRENT_TIMESTAMP, 436, 'Photography'),
-(467, 54, 'Classic Literature Must-Reads', CURRENT_TIMESTAMP, 437, 'Literature'),
-(468, 298, 'Climate Change Science Podcasts', CURRENT_TIMESTAMP, 438, 'Science'),
-(469, 168, 'Vegetarian Dinner Recipes', CURRENT_TIMESTAMP, 439, 'Cooking'),
-(470, 464, 'Solo Travel Planning Tips', CURRENT_TIMESTAMP, 440, 'Travel'),
-(471, 109, 'Political Satire Comedy Shows', CURRENT_TIMESTAMP, 441, 'Comedy'),
-(472, 266, 'History of Jazz Music', CURRENT_TIMESTAMP, 442, 'Music'),
-(473, 377, 'Anime Recommendations for Advanced Viewers', CURRENT_TIMESTAMP, 443, 'Anime'),
-(474, 112, 'Artisanal Chocolate Making Techniques', CURRENT_TIMESTAMP, 444, 'Cooking'),
-(475, 277, 'Road Trip Routes in Asia', CURRENT_TIMESTAMP, 445, 'Travel'),
-(476, 47, '2023 Comedy Festivals', CURRENT_TIMESTAMP, 446, 'Comedy'),
-(477, 210, 'Learn to Play the Cello', CURRENT_TIMESTAMP, 447, 'Music'),
-(478, 355, 'RPG Game Storyline Analysis', CURRENT_TIMESTAMP, 448, 'Gaming'),
-(479, 67, 'Quantum Computing Explained', CURRENT_TIMESTAMP, 449, 'Technology'),
-(480, 193, 'Guided Mindfulness Meditation', CURRENT_TIMESTAMP, 450, 'Health and Wellness'),
-(481, 438, 'Ancient Egypt History Documentaries', CURRENT_TIMESTAMP, 451, 'History'),
-(482, 104, 'NASA Spacewalk Highlights', CURRENT_TIMESTAMP, 452, 'Science'),
-(483, 289, 'Balcony Gardening Tips', CURRENT_TIMESTAMP, 453, 'Home and Garden'),
-(484, 394, 'E-commerce Trends 2023', CURRENT_TIMESTAMP, 454, 'Business'),
-(485, 155, 'Chinese Language Learning Tips', CURRENT_TIMESTAMP, 455, 'Language Learning'),
-(486, 268, 'VR Game Design Principles', CURRENT_TIMESTAMP, 456, 'Gaming'),
-(487, 383, 'Guided Meditation for Sleep', CURRENT_TIMESTAMP, 457, 'Health and Wellness'),
-(488, 158, 'Classic Hollywood Movie Stars', CURRENT_TIMESTAMP, 458, 'Film'),
-(489, 472, 'Food Photography Editing Techniques', CURRENT_TIMESTAMP, 459, 'Photography'),
-(490, 83, 'Classic Mystery Novels', CURRENT_TIMESTAMP, 460, 'Literature'),
-(491, 319, 'Astronomy Podcasts', CURRENT_TIMESTAMP, 461, 'Science'),
-(492, 172, 'Gluten-Free Cooking Classes', CURRENT_TIMESTAMP, 462, 'Cooking'),
-(493, 448, 'Culinary Tours and Tastings', CURRENT_TIMESTAMP, 463, 'Travel'),
-(494, 105, '2023 Stand-up Comedy Tours', CURRENT_TIMESTAMP, 464, 'Comedy'),
-(495, 266, 'History of Hip Hop Music', CURRENT_TIMESTAMP, 465, 'Music'),
-(496, 391, 'Online Multiplayer Game Reviews', CURRENT_TIMESTAMP, 466, 'Gaming'),
-(497, 140, 'Ethical AI Development', CURRENT_TIMESTAMP, 467, 'Technology'),
-(498, 295, 'Mindful Living Practices', CURRENT_TIMESTAMP, 468, 'Health and Wellness'),
-(499, 83, 'Ancient China History Documentaries', CURRENT_TIMESTAMP, 469, 'History'),
+(1, 1, 'SQL Tutorial', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(2, 2, 'Funny Animals', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(3, 3, 'Tech News', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(4, 4, 'Italian Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(5, 1, 'Space Exploration', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(6, 2, 'Healthy Cooking', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(7, 3, 'Gaming Tips', CURRENT_TIMESTAMP, 2, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(8, 4, 'Nature Documentary', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(9, 5, 'DIY Home Improvement', CURRENT_TIMESTAMP, 3, 'DIY');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(10, 1, 'Classical Music Concert', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(11, 2, 'Stand-up Comedy Special', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(12, 3, 'Latest Smartphones Review', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(13, 4, 'Mediterranean Cuisine', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(14, 5, 'Adventure Travel Destinations', CURRENT_TIMESTAMP, 2, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(15, 1, 'Rock Music Hits', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(16, 2, 'Funny Prank Videos', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(17, 3, 'Programming Tutorials', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(18, 4, 'Baking Techniques', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(19, 5, 'History Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(20, 1, 'Pop Music Chart Toppers', CURRENT_TIMESTAMP, 1, 'Music');
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(21, 2, 'Sketch Comedy Shows', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(22, 3, 'Virtual Reality Innovations', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(23, 4, 'Mexican Cuisine Cooking Class', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(24, 5, 'Art and Creativity Workshops', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(25, 1, 'EDM Festival Highlights', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(26, 2, 'Funny Dog Videos Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(27, 3, 'Latest Mobile Gaming Apps', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(28, 4, 'Vegetarian Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(29, 5, 'National Geographic Wildlife Specials', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(30, 1, 'Jazz Music Fusion Concert', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(31, 2, 'Improv Comedy Shows', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(32, 3, 'AI and Machine Learning Explained', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(33, 4, 'Japanese Cuisine Sushi Masterclass', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(34, 5, 'Photography Tips and Tricks', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(35, 1, 'Alternative Rock Music Anthems', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(36, 2, 'Satirical News Comedy', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(37, 3, 'Cryptocurrency Market Analysis', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(38, 4, 'Healthy Dessert Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(39, 5, 'Space Science and Exploration', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(40, 1, 'Country Music Classics', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(41, 2, 'Wholesome Family Comedy Shows', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(42, 3, 'Web Development Bootcamp', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(43, 4, 'Molecular Gastronomy Techniques', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(44, 5, 'Modern Art Exhibition Highlights', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(45, 1, 'Indie Music Discoveries', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(46, 2, 'Funny Cat Memes', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(47, 3, 'Latest Smartphone Trends', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(48, 4, 'French Pastry Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(49, 5, 'Travel Vlog Europe', CURRENT_TIMESTAMP, 2, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(50, 1, 'Oldies Music Classics', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(51, 2, 'Stand-up Comedy Clips', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(52, 3, 'Artificial Intelligence Applications', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(53, 4, 'Mediterranean Diet Benefits', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(54, 5, 'Historical Architecture Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(55, 1, 'Electronic Dance Music Mix', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(56, 2, 'Funny Sketches Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(57, 3, 'Top Mobile Games 2023', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(58, 4, 'Vegan Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(59, 5, 'SpaceX Rocket Launch', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(60, 1, 'Blues Music Legends', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(61, 2, 'Classic Comedy Films', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(62, 3, 'Augmented Reality Innovations', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(63, 4, 'Thai Cuisine Cooking Class', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(64, 5, 'Digital Art Workshops', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(65, 1, 'Techno Music Festival Highlights', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(66, 2, 'Cute Animal Videos Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(67, 3, 'Top Esports Strategies
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(67, 3, 'Top Esports Strategies', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(68, 4, 'Gluten-Free Baking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(69, 5, 'Underwater Wildlife Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(70, 1, 'Funk Music Grooves', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(71, 2, 'Family-friendly Comedy Show', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(72, 3, 'Quantum Computing Explained', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(73, 4, 'Sushi Rolling Techniques', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(74, 5, 'Photography Composition Tips', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(75, 1, 'Reggae Music Vibes', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(76, 2, 'Classic Sitcoms Collection', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(77, 3, 'Personal Finance Tips', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(78, 4, 'Low-Carb Dessert Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(79, 5, 'NASA Space Exploration Updates', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(80, 1, 'Bluegrass Music Jams', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(81, 2, 'Feel-good Comedy Movies', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(82, 3, 'Web Design Best Practices', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(83, 4, 'French Cooking Masterclass', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(84, 5, 'Contemporary Art Exhibitions', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(85, 1, 'Gospel Music Worship', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(86, 2, 'Classic Cartoon Episodes', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(87, 3, 'Future Technology Trends', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(88, 4, 'Molecular Mixology Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(89, 5, 'Solo Travel Tips', CURRENT_TIMESTAMP, 2, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(90, 1, 'R&B Music Slow Jams', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(91, 2, 'Stand-up Comedy Specials 2023', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(92, 3, 'Cybersecurity Basics', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(93, 4, 'French Cuisine Desserts', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(94, 5, 'Ancient History Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(95, 1, 'Trance Music Mix', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(96, 2, 'Funny Pet Bloopers', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(97, 3, 'Top Mobile Games Reviews', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(98, 4, 'Plant-Based Cooking Ideas', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(99, 5, 'Space Travel Explained', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(100, 1, 'Soul Music Classics', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(101, 2, 'Classic Comedy Sketches', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(102, 3, 'Blockchain Technology Insights', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(103, 4, 'Japanese Street Food Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(104, 5, 'Abstract Art Workshop', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(105, 1, 'EDM Remixes Collection', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(106, 2, 'Funny Improv Moments', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(107, 3, 'Mobile Gaming Strategies', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(108, 4, 'Gluten-Free Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(109, 5, 'Wildlife Conservation Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(110, 1, 'Fusion Jazz Music', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(111, 2, 'Family Movie Night Comedy', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(112, 3, 'Artificial General Intelligence', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(113, 4, 'Sushi Artistry Techniques', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(114, 5, 'Digital Painting Tips', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(115, 1, 'Island Music Vibes', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(116, 2, 'Classic Stand-up Comedy Specials', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(117, 3, 'Personal Finance Strategies', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(118, 4, 'Low-Sugar Dessert Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(119, 5, 'NASA Astronomy Updates', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(120, 1, 'Bluegrass Music Festivals', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(121, 2, 'Family Comedy Series', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(122, 3, 'User Interface Design Principles', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(123, 4, 'Italian Gelato Making Class', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(124, 5, 'Modern Sculpture Exhibitions', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(125, 1, 'Motivational Speeches', CURRENT_TIMESTAMP, 1, 'Motivation');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(126, 2, 'Prank Call Videos', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(127, 3, 'Latest Smartphone Reviews', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(128, 4, 'Mexican Street Food Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(129, 5, 'Adventure Travel Tips', CURRENT_TIMESTAMP, 2, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(130, 1, 'Instrumental Jazz Music', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(131, 2, 'Classic Comedy Clips', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(132, 3, 'Future of Robotics', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(133, 4, 'Indian Cuisine Cooking Class', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(134, 5, 'Science and Nature Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(135, 1, 'Electronic Music Production Tutorials', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(136, 2, 'Funny Vine Compilations', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(137, 3, 'Mobile Gaming News', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(138, 4, 'Vegetarian Cooking Hacks', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(139, 5, 'Astronomy and Astrophysics Lectures', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(140, 1, 'Smooth Jazz Music', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(141, 2, 'Classic Cartoon Bloopers', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(142, 3, 'Quantum Computing Applications', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(143, 4, 'French Dessert Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(144, 5, 'Modern Art Installations', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(145, 1, 'Techno Remixes Collection', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(146, 2, 'Funny Cat Fails', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(147, 3, 'Top Esports News', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(148, 4, 'Low-Calorie Cooking Ideas', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(149, 5, 'Underwater Photography Tips', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(150, 1, 'Reggae Music Party Mix', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(151, 2, 'Classic Sitcom Moments', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(152, 3, 'Cryptocurrency Investment Tips', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(153, 4, 'Healthy Smoothie Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(154, 5, 'Space Exploration Updates', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(155, 1, 'Country Music Roadtrip Playlist', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(156, 2, 'Family-friendly Comedy Specials', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(157, 3, 'Web Development Frameworks', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(158, 4, 'Japanese Cooking Techniques', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(159, 5, 'Contemporary Photography Exhibitions', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(160, 1, 'Gospel Music Worship Experience', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(161, 2, 'Classic Comedy Duos', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(162, 3, 'Personal Finance for Beginners', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(163, 4, 'Gluten-Free Baking Ideas', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(164, 5, 'NASA Space Science Updates', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(165, 1, 'Motivational Podcasts', CURRENT_TIMESTAMP, 1, 'Motivation');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(166, 2, 'Funny Moments Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(167, 3, 'Latest Tech Gadgets', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(168, 4, 'Greek Cuisine Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(169, 5, 'Budget Travel Tips', CURRENT_TIMESTAMP, 2, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(170, 1, 'Chillhop Music Playlist', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(171, 2, 'Classic Comedy Monologues', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(172, 3, 'Future of Artificial Intelligence', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(173, 4, 'Japanese Sweets Making Class', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(174, 5, 'Nature Conservation Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(175, 1, 'Synthwave Music Mix', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(176, 2, 'Funny Animal Vines', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(177, 3, 'Mobile Gaming Reviews', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(178, 4, 'Plant-Based Cooking Inspiration', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(179, 5, 'Outer Space Exploration Documentaries', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(180, 1, 'Smooth R&B Music', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(181, 2, 'Classic Comedy Skits', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(182, 3, 'Quantum Computing Developments', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(183, 4, 'Italian Gelato Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(184, 5, 'Modern Sculpture Art Exhibitions', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(185, 1, 'Trance Music Anthems', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(186, 2, 'Funny Pet Videos Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(187, 3, 'Top Mobile Games Updates', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(188, 4, 'Vegetarian Cooking Essentials', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(189, 5, 'Astronomy Discoveries Documentaries', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(190, 1, 'Soulful Jazz Music', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(191, 2, 'Classic Comedy Clips Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(192, 3, 'Cryptocurrency Market Trends', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(193, 4, 'Low-Carb Cooking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(194, 5, 'Underwater Photography Techniques', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(195, 1, 'Reggae Music Classics', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(196, 2, 'Classic Sitcom Bloopers', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(197, 3, 'Personal Finance Insights', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(198, 4, 'Healthy Dessert Ideas', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(199, 5, 'NASA Space Exploration Highlights', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(200, 1, 'Bluegrass Music Favorites', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(201, 2, 'Family Comedy Specials Marathon', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(202, 3, 'Web Development Tools', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(203, 4, 'Japanese Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(204, 5, 'Contemporary Photography Trends', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(205, 1, 'Motivational TED Talks', CURRENT_TIMESTAMP, 1, 'Motivation');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(206, 2, 'Funny Cat Moments', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(207, 3, 'Latest Tech Innovations', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(208, 4, 'Spanish Tapas Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(209, 5, 'Exotic Travel Destinations', CURRENT_TIMESTAMP, 2, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(210, 1, 'Lofi Beats for Studying', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(211, 2, 'Classic Comedy Scenes', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(212, 3, 'Future of Quantum Computing', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(213, 4, 'Sushi Rolling Masterclass', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(214, 5, 'Nature and Wildlife Documentaries', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(215, 1, 'Synthpop Music Mix', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(216, 2, 'Funny Dog Vlogs', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(217, 3, 'Mobile Gaming Strategies', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(218, 4, 'Vegan Cooking Challenges', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(219, 5, 'Space Science Lectures', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(220, 1, 'Jazz Fusion Music', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(221, 2, 'Classic Comedy Moments', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(222, 3, 'Blockchain Technology Explained', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(223, 4, 'French Pastry Baking Class', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(224, 5, 'Modern Art Galleries Tour', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(225, 1, 'Chillstep Music Playlist', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(226, 2, 'Funny Pranks Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(227, 3, 'Top Mobile Games Strategies', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(228, 4, 'Vegetarian Cooking Masterclass', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(229, 5, 'Astronomy and Astrophysics Documentaries', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(230, 1, 'Smooth Hip Hop Beats', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(231, 2, 'Classic Comedy Sketch Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(232, 3, 'Cryptocurrency Market Updates', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(233, 4, 'Low-Sodium Cooking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(234, 5, 'Underwater Photography Inspiration', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(235, 1, 'Reggae Music Vibes Playlist', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(236, 2, 'Classic Sitcom Highlights', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(237, 3, 'Personal Finance Strategies for Beginners', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(238, 4, 'Healthy Dessert Alternatives', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(239, 5, 'NASA Space Exploration Insights', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(240, 1, 'Bluegrass Music Jam Session', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(241, 2, 'Family Comedy Series Marathon', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(242, 3, 'Web Development Trends', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(243, 4, 'Japanese Cuisine Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(244, 5, 'Contemporary Photography Exhibitions Highlights', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(245, 1, 'Motivational Audiobooks', CURRENT_TIMESTAMP, 1, 'Motivation');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(246, 2, 'Funny Animal Antics', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(247, 3, 'Latest Tech Trends', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(248, 4, 'Mediterranean Cooking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(249, 5, 'Solo Adventure Travel', CURRENT_TIMESTAMP, 2, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(250, 1, 'Ambient Music for Relaxation', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(251, 2, 'Classic Comedy Stand-up Shows', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(252, 3, 'Future of Robotics and AI', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(253, 4, 'Japanese Ramen Cooking Class', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(254, 5, 'Wildlife Conservation Insights', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(255, 1, 'Chillout Music Mix', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(256, 2, 'Funny Animal Memes Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(257, 3, 'Mobile Gaming Tips and Tricks', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(258, 4, 'Plant-Based Cooking Workshop', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(259, 5, 'Space Exploration Documentaries', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(260, 1, 'Classic Jazz Music Standards', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(261, 2, 'Classic Comedy Movies Marathon', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(262, 3, 'Blockchain and Cryptocurrency Explained', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(263, 4, 'French Patisserie Baking Class', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(264, 5, 'Modern Art Installations Showcase', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(265, 1, 'Lo-fi Hip Hop Music Playlist', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(266, 2, 'Funny Pet Bloopers Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(267, 3, 'Top Mobile Games Reviews 2023', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(268, 4, 'Vegetarian Cooking Challenges', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(269, 5, 'Astronomy and Astrophysics Discoveries', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(270, 1, 'Smooth R&B Music Mix', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(271, 2, 'Classic Comedy Sketch Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(272, 3, 'Cryptocurrency Market Trends 2023', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(273, 4, 'Low-Carb Cooking Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(274, 5, 'Underwater Photography Inspiration', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(275, 1, 'Reggae Music Vibes Playlist', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(276, 2, 'Classic Sitcom Highlights Marathon', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(277, 3, 'Personal Finance Strategies for Beginners', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(278, 4, 'Healthy Dessert Alternatives', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(279, 5, 'NASA Space Exploration Insights', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(280, 1, 'Bluegrass Music Jam Session', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(281, 2, 'Family Comedy Series Marathon', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(282, 3, 'Web Development Trends', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(283, 4, 'Japanese Cuisine Cooking Tips', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(284, 5, 'Contemporary Photography Exhibitions Highlights', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(285, 1, 'Motivational Podcasts 2023', CURRENT_TIMESTAMP, 1, 'Motivation');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(286, 2, 'Funny Animal Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(287, 3, 'Latest Tech News', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(288, 4, 'Italian Pasta Recipes', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(289, 5, 'Budget-friendly Travel Destinations', CURRENT_TIMESTAMP, 2, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(290, 1, 'Lofi Chillhop Beats', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(291, 2, 'Classic Comedy Shows', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(292, 3, 'Future of Quantum Computing', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(293, 4, 'Sushi Making Workshop', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(294, 5, 'Wildlife Conservation Documentaries 2023', CURRENT_TIMESTAMP, 1, 'Documentary');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(295, 1, 'Synthwave Music Mix 2023', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(296, 2, 'Funny Dog Moments Compilation', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(297, 3, 'Mobile Gaming Tips and Tricks 2023', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(298, 4, 'Plant-Based Cooking Challenge', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(299, 5, 'Space Exploration Insights', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(300, 1, 'Classic Jazz Standards Playlist', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(301, 2, 'Classic Comedy Movies 2023 Marathon', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(302, 3, 'Blockchain and Cryptocurrency Explained 2023', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(303, 4, 'French Pastry Baking Class 2023', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(304, 5, 'Modern Art Installations Showcase 2023', CURRENT_TIMESTAMP, 1, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(305, 1, 'Lo-fi Hip Hop Beats for Studying', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(306, 2, 'Funny Cat Videos Compilation 2023', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(307, 3, 'Top Mobile Games Reviews 2023', CURRENT_TIMESTAMP, 3, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(308, 4, 'Vegetarian Cooking Masterclass 2023', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(309, 5, 'Astronomy and Astrophysics Discoveries 2023', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(310, 1, 'Smooth R&B Music Mix 2023', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(311, 2, 'Classic Comedy Sketch Compilation 2023', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(312, 3, 'Cryptocurrency Market Trends 2023', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(313, 4, 'Low-Carb Cooking Recipes 2023', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(314, 5, 'Underwater Photography Inspiration 2023', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(315, 1, 'Reggae Music Vibes Playlist 2023', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(316, 2, 'Classic Sitcom Highlights Marathon 2023', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(317, 3, 'Personal Finance Strategies for Beginners 2023', CURRENT_TIMESTAMP, 3, 'Finance');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(318, 4, 'Healthy Dessert Alternatives 2023', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(319, 5, 'NASA Space Exploration Insights 2023', CURRENT_TIMESTAMP, 1, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(320, 1, 'Bluegrass Music Jam Session 2023', CURRENT_TIMESTAMP, 1, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(321, 2, 'Family Comedy Series Marathon 2023', CURRENT_TIMESTAMP, 2, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(322, 3, 'Web Development Trends 2023', CURRENT_TIMESTAMP, 3, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(323, 4, 'Japanese Cuisine Cooking Tips 2023', CURRENT_TIMESTAMP, 4, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(324, 5, 'Contemporary Photography Exhibitions Highlights 2023', CURRENT_TIMESTAMP, 1, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(325, 156, 'Sci-Fi Movie Recommendations', CURRENT_TIMESTAMP, 296, 'Science Fiction');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(326, 278, 'Healthy Vegan Recipes', CURRENT_TIMESTAMP, 295, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(327, 412, 'Travel Destinations 2023', CURRENT_TIMESTAMP, 297, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(328, 89, 'Stand-up Comedy Specials', CURRENT_TIMESTAMP, 298, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(329, 221, 'Guitar Lessons for Beginners', CURRENT_TIMESTAMP, 299, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(330, 364, 'Game Reviews 2023', CURRENT_TIMESTAMP, 300, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(331, 47, 'Artificial Intelligence Explained', CURRENT_TIMESTAMP, 301, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(332, 193, 'Mindfulness Meditation Techniques', CURRENT_TIMESTAMP, 302, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(333, 442, 'Historical Documentaries', CURRENT_TIMESTAMP, 303, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(334, 108, 'Space Exploration News', CURRENT_TIMESTAMP, 304, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(335, 276, 'DIY Home Improvement Ideas', CURRENT_TIMESTAMP, 305, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(336, 397, 'Digital Marketing Strategies', CURRENT_TIMESTAMP, 306, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(337, 134, 'Italian Language Learning Tips', CURRENT_TIMESTAMP, 307, 'Language Learning');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(338, 260, 'Virtual Reality Gaming Experiences', CURRENT_TIMESTAMP, 308, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(339, 393, 'Yoga for Beginners', CURRENT_TIMESTAMP, 309, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(340, 168, 'Film Noir Classics', CURRENT_TIMESTAMP, 310, 'Film Noir');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(341, 481, 'Photography Editing Tutorials', CURRENT_TIMESTAMP, 311, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(342, 55, 'Book Recommendations 2023', CURRENT_TIMESTAMP, 312, 'Literature');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(343, 307, 'Science Podcasts', CURRENT_TIMESTAMP, 313, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(344, 172, 'Vegetarian Cooking Classes', CURRENT_TIMESTAMP, 314, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(345, 438, 'Travel Vlogging Tips', CURRENT_TIMESTAMP, 315, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(346, 95, 'Stand-up Comedy Shows 2023', CURRENT_TIMESTAMP, 316, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(347, 243, 'Rock Music History', CURRENT_TIMESTAMP, 317, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(348, 379, 'RPG Game Strategies', CURRENT_TIMESTAMP, 318, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(349, 116, 'AI in Healthcare', CURRENT_TIMESTAMP, 319, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(350, 289, 'Mental Health Awareness', CURRENT_TIMESTAMP, 320, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(351, 55, 'World War II Documentaries', CURRENT_TIMESTAMP, 321, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(352, 211, 'Astrophysics Explained', CURRENT_TIMESTAMP, 322, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(353, 444, 'Urban Gardening Tips', CURRENT_TIMESTAMP, 323, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(354, 179, 'Social Media Marketing Trends', CURRENT_TIMESTAMP, 324, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(355, 322, 'Japanese Anime Recommendations', CURRENT_TIMESTAMP, 325, 'Anime');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(356, 167, 'Mexican Cuisine Cooking Classes', CURRENT_TIMESTAMP, 326, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(357, 408, 'Top 10 Beach Destinations', CURRENT_TIMESTAMP, 327, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(358, 53, 'Stand-up Comedy Specials 2023', CURRENT_TIMESTAMP, 328, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(359, 214, 'Piano Lessons for Beginners', CURRENT_TIMESTAMP, 329, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(360, 357, 'Strategy Game Reviews', CURRENT_TIMESTAMP, 330, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(361, 63, 'Blockchain Technology Explained', CURRENT_TIMESTAMP, 331, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(362, 198, 'Wellness Retreats Near Me', CURRENT_TIMESTAMP, 332, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(363, 437, 'Ancient Civilizations Documentaries', CURRENT_TIMESTAMP, 333, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(364, 102, 'Latest Space Exploration Discoveries', CURRENT_TIMESTAMP, 334, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(365, 276, 'Interior Design DIY Projects', CURRENT_TIMESTAMP, 335, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(366, 391, 'E-commerce Business Strategies', CURRENT_TIMESTAMP, 336, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(367, 127, 'French Language Learning Tips', CURRENT_TIMESTAMP, 337, 'Language Learning');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(368, 253, 'Augmented Reality Gaming Trends', CURRENT_TIMESTAMP, 338, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(369, 388, 'Mind-Body Connection Exercises', CURRENT_TIMESTAMP, 339, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(370, 162, 'Classic Hollywood Movies', CURRENT_TIMESTAMP, 340, 'Film');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(371, 472, 'Advanced Photography Techniques', CURRENT_TIMESTAMP, 341, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(372, 77, 'Science Fiction Book Recommendations', CURRENT_TIMESTAMP, 342, 'Literature');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(373, 313, 'Space and Astronomy Podcasts', CURRENT_TIMESTAMP, 343, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(374, 182, 'Plant-Based Cooking Classes', CURRENT_TIMESTAMP, 344, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(375, 448, 'Adventure Travel Destinations', CURRENT_TIMESTAMP, 345, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(376, 104, 'Top Comedy Shows 2023', CURRENT_TIMESTAMP, 346, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(377, 266, 'Electronic Dance Music History', CURRENT_TIMESTAMP, 347, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(378, 383, 'MMORPG Game Strategies', CURRENT_TIMESTAMP, 348, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(379, 139, 'Ethical Hacking Basics', CURRENT_TIMESTAMP, 349, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(380, 295, 'Holistic Health Practices', CURRENT_TIMESTAMP, 350, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(381, 83, 'World War I Documentaries', CURRENT_TIMESTAMP, 351, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(382, 217, 'Quantum Physics Explained', CURRENT_TIMESTAMP, 352, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(383, 452, 'Sustainable Gardening Tips', CURRENT_TIMESTAMP, 353, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(384, 189, 'Social Media Influencer Marketing', CURRENT_TIMESTAMP, 354, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(385, 234, 'Korean Language Learning Resources', CURRENT_TIMESTAMP, 355, 'Language Learning');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(386, 379, 'Virtual Reality Art Exhibitions', CURRENT_TIMESTAMP, 356, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(387, 144, 'Time Management Strategies', CURRENT_TIMESTAMP, 357, 'Self-Help');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(388, 322, 'Outdoor Photography Techniques', CURRENT_TIMESTAMP, 358, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(389, 54, 'Classic Literature Books', CURRENT_TIMESTAMP, 359, 'Literature');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(390, 298, 'Environmental Science Podcasts', CURRENT_TIMESTAMP, 360, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(391, 168, 'Vegetarian Meal Prep Recipes', CURRENT_TIMESTAMP, 361, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(392, 464, 'Road Trip Planning Tips', CURRENT_TIMESTAMP, 362, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(393, 109, 'Political Satire Comedy Shows', CURRENT_TIMESTAMP, 363, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(394, 377, 'Anime Series Marathon', CURRENT_TIMESTAMP, 364, 'Anime');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(395, 112, 'Mediterranean Cuisine Cooking Tips', CURRENT_TIMESTAMP, 365, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(396, 277, 'European Travel Destinations', CURRENT_TIMESTAMP, 366, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(397, 47, '2023 Comedy Specials', CURRENT_TIMESTAMP, 367, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(398, 210, 'Learn to Play the Saxophone', CURRENT_TIMESTAMP, 368, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(399, 355, 'Open-World Game Reviews', CURRENT_TIMESTAMP, 369, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(400, 67, 'Cybersecurity Basics', CURRENT_TIMESTAMP, 370, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(401, 193, 'Mindful Eating Practices', CURRENT_TIMESTAMP, 371, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(402, 438, 'Ancient History Documentaries', CURRENT_TIMESTAMP, 372, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(403, 104, 'Mars Exploration Updates', CURRENT_TIMESTAMP, 373, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(404, 289, 'DIY Indoor Garden Ideas', CURRENT_TIMESTAMP, 374, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(405, 394, 'E-commerce Success Stories', CURRENT_TIMESTAMP, 375, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(406, 155, 'Spanish Language Learning Tips', CURRENT_TIMESTAMP, 376, 'Language Learning');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(407, 268, 'Virtual Reality Game Development', CURRENT_TIMESTAMP, 377, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(408, 383, 'Mindfulness Meditation Techniques', CURRENT_TIMESTAMP, 378, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(409, 158, 'Classic Film Noir Recommendations', CURRENT_TIMESTAMP, 379, 'Film Noir');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(410, 472, 'Advanced Photography Editing', CURRENT_TIMESTAMP, 380, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(411, 83, 'Science Fiction Literature Classics', CURRENT_TIMESTAMP, 381, 'Literature');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(412, 319, 'Space Exploration Podcasts', CURRENT_TIMESTAMP, 382, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(413, 172, 'Plant-Based Cooking for Beginners', CURRENT_TIMESTAMP, 383, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(414, 448, 'Island Hopping Travel Adventures', CURRENT_TIMESTAMP, 384, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(415, 105, '2023 Stand-up Comedy Shows', CURRENT_TIMESTAMP, 385, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(416, 266, 'History of Electronic Dance Music', CURRENT_TIMESTAMP, 386, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(417, 391, 'MMORPG Gaming Community Tips', CURRENT_TIMESTAMP, 387, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(418, 140, 'Introduction to Artificial Intelligence', CURRENT_TIMESTAMP, 388, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(419, 295, 'Holistic Health and Wellness Practices', CURRENT_TIMESTAMP, 389, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(420, 83, 'Ancient Greece History Documentaries', CURRENT_TIMESTAMP, 390, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(421, 217, 'Quantum Mechanics Explained', CURRENT_TIMESTAMP, 391, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(422, 452, 'Balcony Gardening Tips', CURRENT_TIMESTAMP, 392, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(423, 189, 'Social Media Content Creation Strategies', CURRENT_TIMESTAMP, 393, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(424, 234, 'Advanced Korean Language Learning', CURRENT_TIMESTAMP, 394, 'Language Learning');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(425, 379, 'Virtual Reality Art Installations', CURRENT_TIMESTAMP, 395, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(426, 144, 'Personal Development Books', CURRENT_TIMESTAMP, 396, 'Self-Help');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(427, 322, 'Portrait Photography Techniques', CURRENT_TIMESTAMP, 397, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(428, 54, 'Science Fiction Literature Classics', CURRENT_TIMESTAMP, 398, 'Literature');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(429, 298, 'Environmental Science Podcasts', CURRENT_TIMESTAMP, 399, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(430, 168, 'Healthy Vegetarian Recipes', CURRENT_TIMESTAMP, 400, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(431, 464, 'Solo Travel Planning Tips', CURRENT_TIMESTAMP, 401, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(432, 109, 'Political Satire Comedy Shows', CURRENT_TIMESTAMP, 402, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(433, 377, 'Anime Recommendations for Beginners', CURRENT_TIMESTAMP, 403, 'Anime');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(434, 112, 'Molecular Gastronomy Techniques', CURRENT_TIMESTAMP, 404, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(435, 277, 'Road Trip Destinations in Europe', CURRENT_TIMESTAMP, 405, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(436, 47, '2023 Stand-up Comedy Specials', CURRENT_TIMESTAMP, 406, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(437, 210, 'Learn to Play the Violin', CURRENT_TIMESTAMP, 407, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(438, 355, 'Open-World Game Strategies', CURRENT_TIMESTAMP, 408, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(439, 67, 'Data Science and Machine Learning', CURRENT_TIMESTAMP, 409, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(440, 193, 'Mindful Eating Habits', CURRENT_TIMESTAMP, 410, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(441, 438, 'Ancient Rome History Documentaries', CURRENT_TIMESTAMP, 411, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(442, 104, 'NASA Mars Rover Updates', CURRENT_TIMESTAMP, 412, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(443, 289, 'Urban Gardening DIY Projects', CURRENT_TIMESTAMP, 413, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(444, 394, 'E-commerce Marketing Strategies', CURRENT_TIMESTAMP, 414, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(445, 155, 'Italian Language Learning Tips', CURRENT_TIMESTAMP, 415, 'Language Learning');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(446, 268, 'VR Game Development Tutorials', CURRENT_TIMESTAMP, 416, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(447, 383, 'Mindful Meditation for Stress Relief', CURRENT_TIMESTAMP, 417, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(448, 158, 'Classic Film Recommendations', CURRENT_TIMESTAMP, 418, 'Film');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(449, 472, 'Advanced Photography Editing Techniques', CURRENT_TIMESTAMP, 419, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(450, 83, 'Classic Science Fiction Books', CURRENT_TIMESTAMP, 420, 'Literature');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(451, 319, 'Space Exploration Podcasts', CURRENT_TIMESTAMP, 421, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(452, 172, 'Vegan Cooking Classes', CURRENT_TIMESTAMP, 422, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(453, 448, 'Culinary Travel Adventures', CURRENT_TIMESTAMP, 423, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(454, 105, '2023 Comedy Shows', CURRENT_TIMESTAMP, 424, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(455, 266, 'History of Electronic Dance Music', CURRENT_TIMESTAMP, 425, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(456, 391, 'MMORPG Game Reviews', CURRENT_TIMESTAMP, 426, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(457, 140, 'AI and Ethics', CURRENT_TIMESTAMP, 427, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(458, 295, 'Holistic Health Practices', CURRENT_TIMESTAMP, 428, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(459, 83, 'World War II History Documentaries', CURRENT_TIMESTAMP, 429, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(460, 217, 'Quantum Physics Explained', CURRENT_TIMESTAMP, 430, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(461, 452, 'Small-Space Gardening Tips', CURRENT_TIMESTAMP, 431, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(462, 189, 'Social Media Marketing Tips for Small Businesses', CURRENT_TIMESTAMP, 432, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(463, 234, 'Intermediate Korean Language Learning', CURRENT_TIMESTAMP, 433, 'Language Learning');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(464, 379, 'VR Art Installations Showcase', CURRENT_TIMESTAMP, 434, 'Art');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(465, 144, 'Self-Improvement Books', CURRENT_TIMESTAMP, 435, 'Self-Help');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(466, 322, 'Nature Photography Techniques', CURRENT_TIMESTAMP, 436, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(467, 54, 'Classic Literature Must-Reads', CURRENT_TIMESTAMP, 437, 'Literature');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(468, 298, 'Climate Change Science Podcasts', CURRENT_TIMESTAMP, 438, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(469, 168, 'Vegetarian Dinner Recipes', CURRENT_TIMESTAMP, 439, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(470, 464, 'Solo Travel Planning Tips', CURRENT_TIMESTAMP, 440, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(471, 109, 'Political Satire Comedy Shows', CURRENT_TIMESTAMP, 441, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(472, 266, 'History of Jazz Music', CURRENT_TIMESTAMP, 442, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(473, 377, 'Anime Recommendations for Advanced Viewers', CURRENT_TIMESTAMP, 443, 'Anime');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(474, 112, 'Artisanal Chocolate Making Techniques', CURRENT_TIMESTAMP, 444, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(475, 277, 'Road Trip Routes in Asia', CURRENT_TIMESTAMP, 445, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(476, 47, '2023 Comedy Festivals', CURRENT_TIMESTAMP, 446, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(477, 210, 'Learn to Play the Cello', CURRENT_TIMESTAMP, 447, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(478, 355, 'RPG Game Storyline Analysis', CURRENT_TIMESTAMP, 448, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(479, 67, 'Quantum Computing Explained', CURRENT_TIMESTAMP, 449, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(480, 193, 'Guided Mindfulness Meditation', CURRENT_TIMESTAMP, 450, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(481, 438, 'Ancient Egypt History Documentaries', CURRENT_TIMESTAMP, 451, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(482, 104, 'NASA Spacewalk Highlights', CURRENT_TIMESTAMP, 452, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(483, 289, 'Balcony Gardening Tips', CURRENT_TIMESTAMP, 453, 'Home and Garden');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(484, 394, 'E-commerce Trends 2023', CURRENT_TIMESTAMP, 454, 'Business');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(485, 155, 'Chinese Language Learning Tips', CURRENT_TIMESTAMP, 455, 'Language Learning');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(486, 268, 'VR Game Design Principles', CURRENT_TIMESTAMP, 456, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(487, 383, 'Guided Meditation for Sleep', CURRENT_TIMESTAMP, 457, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(488, 158, 'Classic Hollywood Movie Stars', CURRENT_TIMESTAMP, 458, 'Film');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(489, 472, 'Food Photography Editing Techniques', CURRENT_TIMESTAMP, 459, 'Photography');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(490, 83, 'Classic Mystery Novels', CURRENT_TIMESTAMP, 460, 'Literature');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(491, 319, 'Astronomy Podcasts', CURRENT_TIMESTAMP, 461, 'Science');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(492, 172, 'Gluten-Free Cooking Classes', CURRENT_TIMESTAMP, 462, 'Cooking');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(493, 448, 'Culinary Tours and Tastings', CURRENT_TIMESTAMP, 463, 'Travel');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(494, 105, '2023 Stand-up Comedy Tours', CURRENT_TIMESTAMP, 464, 'Comedy');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(495, 266, 'History of Hip Hop Music', CURRENT_TIMESTAMP, 465, 'Music');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(496, 391, 'Online Multiplayer Game Reviews', CURRENT_TIMESTAMP, 466, 'Gaming');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(497, 140, 'Ethical AI Development', CURRENT_TIMESTAMP, 467, 'Technology');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(498, 295, 'Mindful Living Practices', CURRENT_TIMESTAMP, 468, 'Health and Wellness');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
+(499, 83, 'Ancient China History Documentaries', CURRENT_TIMESTAMP, 469, 'History');
+
+INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
 (500, 217, 'Neuroscience Explained', CURRENT_TIMESTAMP, 470, 'Science');
 
 
