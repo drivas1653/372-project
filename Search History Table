@@ -1,6 +1,6 @@
 -- Generate dummy data for Search History Table
 INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
-(1, 1, 'SQL Tutorial', CURRENT_TIMESTAMP, 1, 'Music');
+(1, 1, 'SQL How To', CURRENT_TIMESTAMP, 1, 'Music');
 
 INSERT INTO search_history (search_id, user_id, search_term, search_date, video_id, genre) VALUES
 (2, 2, 'Funny Animals', CURRENT_TIMESTAMP, 2, 'Comedy');
