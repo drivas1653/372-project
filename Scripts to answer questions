@@ -10,6 +10,34 @@ GROUP BY
 ORDER BY
     viewership_count DESC;
 
+--Results
+/*
+
+WA VIEWERSHIP_COUNT
+-- ----------------
+22               55
+14               53
+12               45
+17               43
+19               39
+16               38
+18               35
+09               33
+11               29
+20               27
+10               21
+
+WA VIEWERSHIP_COUNT
+-- ----------------
+08               19
+21               19
+13               12
+15               10
+07                8
+23                4
+
+17 rows selected. 
+*/
 
 --WITHOUT TESTING Question 2
 -- “What are the most watched videos on YouTube and what time are they watched?” 
@@ -31,6 +59,14 @@ FROM (
 )
 WHERE ROWNUM = 1;
 
+--Result
+/*
+MOST_WATCHED_VIDEO                                                                                                                                                                                                                                              WATCH_COUNT MOST_RECENT_WATCH_TIME         
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------- -------------------------------
+Culinary Adventure: Global Cuisine                                                                                                                                                                                                                                        2 25-SEP-23 10.15.00.000000000 AM
+
+*/
+
 -- Question 6
 --  “How does the genre of videos change during different times of the year?”
 
@@ -47,6 +83,319 @@ ORDER BY
     EXTRACT(MONTH FROM release_date),
     genre;
 
+--Results
+/*
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         1 Acoustic                                                                                                       1
+         1 Art                                                                                                            2
+         1 Comedy                                                                                                         2
+         1 Cooking                                                                                                        3
+         1 DIY                                                                                                            5
+         1 Education                                                                                                      3
+         1 Entertainment                                                                                                  3
+         1 Fitness                                                                                                        1
+         1 Food nd Cooking                                                                                                1
+         1 Gaming                                                                                                         3
+         1 Indie                                                                                                          1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         1 Literature                                                                                                     1
+         1 Music                                                                                                          3
+         1 Nature                                                                                                         1
+         1 Photography                                                                                                    1
+         1 Reggae                                                                                                         1
+         1 Science                                                                                                        2
+         1 Sports                                                                                                         4
+         1 Technology                                                                                                     1
+         1 Travel                                                                                                         7
+         2 Art                                                                                                            1
+         2 Comedy                                                                                                         2
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         2 Cooking                                                                                                        3
+         2 Documentary                                                                                                    1
+         2 Education                                                                                                      4
+         2 Entertainment                                                                                                  3
+         2 Fitness                                                                                                        1
+         2 Funk                                                                                                           1
+         2 Gaming                                                                                                         8
+         2 History                                                                                                        1
+         2 Literature                                                                                                     2
+         2 Music                                                                                                          7
+         2 Science nd Technology                                                                                          1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         2 Sports                                                                                                         3
+         2 Street                                                                                                         1
+         2 Technology                                                                                                     2
+         2 Trap                                                                                                           1
+         2 Travel                                                                                                         1
+         2 Wellness                                                                                                       1
+         3 Americana                                                                                                      1
+         3 Art                                                                                                            1
+         3 Books nd Literature                                                                                            1
+         3 Comedy                                                                                                         1
+         3 Cooking                                                                                                        1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         3 DIY                                                                                                            5
+         3 Drama                                                                                                          1
+         3 Education                                                                                                      2
+         3 Entertainment                                                                                                  2
+         3 Film                                                                                                           1
+         3 Fitness                                                                                                        2
+         3 Gaming                                                                                                         4
+         3 Literature                                                                                                     3
+         3 Nature                                                                                                         2
+         3 RndB                                                                                                           1
+         3 Science Fiction                                                                                                1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         3 Sports                                                                                                         2
+         3 Technology                                                                                                     3
+         3 Travel                                                                                                         1
+         4 Art                                                                                                            3
+         4 Comedy                                                                                                         4
+         4 Cooking                                                                                                        5
+         4 DIY                                                                                                            2
+         4 Drama                                                                                                          1
+         4 Education                                                                                                      2
+         4 Entertainment                                                                                                  2
+         4 Fitness                                                                                                        2
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         4 Gaming                                                                                                         4
+         4 Gospel                                                                                                         1
+         4 History                                                                                                        1
+         4 Jazz Funk                                                                                                      1
+         4 Literature                                                                                                     1
+         4 Music                                                                                                          1
+         4 Philosophy                                                                                                     1
+         4 Photography                                                                                                    2
+         4 Science                                                                                                        1
+         4 Sports                                                                                                         2
+         4 Technology                                                                                                     3
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         4 Wellness                                                                                                       1
+         5 Adventure                                                                                                      2
+         5 Art                                                                                                            6
+         5 Cooking                                                                                                        3
+         5 DIY                                                                                                            3
+         5 Education                                                                                                      2
+         5 Entertainment                                                                                                  2
+         5 Fitness                                                                                                        2
+         5 Gaming                                                                                                         3
+         5 Literature                                                                                                     3
+         5 Psychedelic                                                                                                    1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         5 Punk                                                                                                           1
+         5 Romance                                                                                                        1
+         5 Science                                                                                                        2
+         5 Science nd Technology                                                                                          1
+         5 Sports                                                                                                         3
+         5 Theatre                                                                                                        2
+         5 Travel                                                                                                         3
+         5 Wellness                                                                                                       1
+         6 Art                                                                                                            1
+         6 Comedy                                                                                                         2
+         6 Cooking                                                                                                        1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         6 Education                                                                                                      2
+         6 Entertainment                                                                                                  2
+         6 Fantasy                                                                                                        1
+         6 Film                                                                                                           1
+         6 Fitness                                                                                                        2
+         6 Gaming                                                                                                         6
+         6 Hardcore                                                                                                       1
+         6 History                                                                                                        1
+         6 Music                                                                                                          2
+         6 News nd Politics                                                                                               1
+         6 Photography                                                                                                    1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         6 Science                                                                                                        5
+         6 Science nd Technology                                                                                          1
+         6 Sports                                                                                                         1
+         6 Talk Show                                                                                                      1
+         6 Technology                                                                                                     2
+         6 World                                                                                                          1
+         7 Alternative                                                                                                    1
+         7 Art                                                                                                            1
+         7 Comedy                                                                                                         1
+         7 Cooking                                                                                                        3
+         7 Country                                                                                                        1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         7 DIY                                                                                                            4
+         7 Documentary                                                                                                    1
+         7 Education                                                                                                      2
+         7 Entertainment                                                                                                  3
+         7 Fashion                                                                                                        1
+         7 Film                                                                                                           1
+         7 Fitness                                                                                                        2
+         7 Gaming                                                                                                         3
+         7 Health nd Fitness                                                                                              1
+         7 Literature                                                                                                     2
+         7 Music                                                                                                          4
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         7 Nature                                                                                                         2
+         7 Sports                                                                                                         2
+         7 Thriller                                                                                                       1
+         7 Travel                                                                                                         4
+         7 Wellness                                                                                                       1
+         8 Art                                                                                                            2
+         8 Comedy                                                                                                         3
+         8 Cooking                                                                                                        2
+         8 DIY                                                                                                            6
+         8 Education                                                                                                      2
+         8 Entertainment                                                                                                  2
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         8 Film nd Animation                                                                                              1
+         8 Fitness                                                                                                        4
+         8 Gaming                                                                                                         5
+         8 History                                                                                                        1
+         8 Horror                                                                                                         1
+         8 J-Pop                                                                                                          1
+         8 Literature                                                                                                     1
+         8 Movie Reviews                                                                                                  1
+         8 Music                                                                                                          4
+         8 Photography                                                                                                    1
+         8 Science                                                                                                        1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         8 Sports                                                                                                         2
+         8 Technology                                                                                                     1
+         9 Art                                                                                                            1
+         9 Bluegrass                                                                                                      1
+         9 Comedy                                                                                                         1
+         9 Cooking                                                                                                        2
+         9 DIY                                                                                                            5
+         9 Education                                                                                                      3
+         9 Entertainment                                                                                                  3
+         9 Fashion                                                                                                        1
+         9 Fitness                                                                                                        3
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+         9 Gaming                                                                                                         4
+         9 Literature                                                                                                     6
+         9 Movie Reviews                                                                                                  1
+         9 Music                                                                                                          4
+         9 Pop                                                                                                            1
+         9 Rock                                                                                                           1
+         9 Science Fiction                                                                                                1
+         9 Sports                                                                                                         3
+         9 Technology                                                                                                     1
+         9 Theatre                                                                                                        1
+         9 Travel                                                                                                         3
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+        10 Art                                                                                                            2
+        10 Beauty nd Fashion                                                                                              1
+        10 Comedy                                                                                                         3
+        10 Cooking                                                                                                        1
+        10 DIY                                                                                                            5
+        10 Dance                                                                                                          1
+        10 Disco                                                                                                          1
+        10 Education                                                                                                      2
+        10 Entertainment                                                                                                  2
+        10 Fantasy                                                                                                        1
+        10 Fitness                                                                                                        1
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+        10 Gaming                                                                                                         5
+        10 Hip-Hop                                                                                                        1
+        10 Literature                                                                                                     5
+        10 Movie Reviews                                                                                                  1
+        10 Music                                                                                                          3
+        10 Science                                                                                                        1
+        10 Sports                                                                                                         2
+        10 Technology                                                                                                     3
+        10 Wellness                                                                                                       1
+        11 Action                                                                                                         1
+        11 Art                                                                                                            2
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+        11 Blues                                                                                                          1
+        11 Classical                                                                                                      1
+        11 Comedy                                                                                                         3
+        11 Cooking                                                                                                        2
+        11 DIY                                                                                                            3
+        11 Drama                                                                                                          1
+        11 Drum and Bass                                                                                                  1
+        11 Education                                                                                                      5
+        11 Entertainment                                                                                                  3
+        11 Fashion                                                                                                        2
+        11 Film                                                                                                           2
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+        11 Fitness                                                                                                        3
+        11 Gaming                                                                                                         4
+        11 Literature                                                                                                     3
+        11 Movie Reviews                                                                                                  1
+        11 Music                                                                                                          2
+        11 Nature                                                                                                         2
+        11 Sports                                                                                                         3
+        11 Technology                                                                                                     1
+        11 Travel                                                                                                         2
+        11 Wellness                                                                                                       1
+        12 Art                                                                                                            2
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+        12 Books nd Literature                                                                                            1
+        12 Comedy                                                                                                         4
+        12 Cooking                                                                                                        2
+        12 Documentary                                                                                                    1
+        12 Education                                                                                                      3
+        12 Electronic                                                                                                     1
+        12 Entertainment                                                                                                  3
+        12 Film nd Animation                                                                                              1
+        12 Fitness                                                                                                        2
+        12 Gaming                                                                                                         4
+        12 History                                                                                                        2
+
+     MONTH GENRE                                                                                                GENRE_COUNT
+---------- ---------------------------------------------------------------------------------------------------- -----------
+        12 Horror                                                                                                         1
+        12 K-Pop                                                                                                          1
+        12 Literature                                                                                                     1
+        12 Metal                                                                                                          1
+        12 Movie Reviews                                                                                                  1
+        12 Music                                                                                                          3
+        12 Sports                                                                                                         3
+        12 Technology                                                                                                     2
+        12 Travel                                                                                                         1
+
+240 rows selected. 
+
+*/
+
 -- WITHOUT TESTING Question 7
 -- “What are the most common trending genres watched?” 
 SELECT
@@ -58,6 +407,7 @@ GROUP BY
     genre
 ORDER BY
     total_views DESC;
+
 
 --WITHOUT TESTING Question 8
 -- “What type of video duration content are users mostly consuming?” 
@@ -75,4 +425,316 @@ GROUP BY
     u.user_id, u.username
 ORDER BY
     average_duration DESC;
+
+-- Results
+/*
+USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       298 dancey_dani                                                                                                       960
+         5 sam_jackson                                                                                                       960
+       258 liam_lagoon                                                                                                       960
+        23 alex_cooper                                                                                                       960
+       292 sophia_sculpture                                                                                                  900
+       241 isabella_illuminate                                                                                               900
+       200 EliEpicExploration                                                                                                900
+       211 IslaIntrigueInsider                                                                                               900
+        30 aaliyah_martin                                                                                                    900
+       137 ThumbsUpTwist                                                                                                     900
+       252 william_whimsy                                                                                                    900
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+        12 linda_carter                                                                                                      900
+       350 peter_parker                                                                                                      900
+       341 grace_kelly                                                                                                       900
+        35 jordan_perez                                                                                                      900
+       272 maya_moonbeam                                                                                                     840
+        19 kevin_turner                                                                                                      840
+        44 zoey_brown                                                                                                        840
+       261 mia_mirage                                                                                                        840
+       247 mia_melody                                                                                                        840
+       334 quentin_quotable                                                                                                  810
+       224 SkylarSculptureStory                                                                                              810
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       216 OwenOdysseyOfficial                                                                                               810
+       222 SebastianSeekerShow                                                                                               810
+        42 grace_walker                                                                                                      780
+        28 mia_hill                                                                                                          780
+       233 emma_echo                                                                                                         780
+       376 penny_penguin                                                                                                     765
+       112 RetroReverieReviews                                                                                               750
+       330 winona_wondrous                                                                                                   750
+       336 bob_marley                                                                                                        750
+       402 parker_peach                                                                                                      740
+       366 freddie_froggy                                                                                                    720
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       250 elijah_enigma                                                                                                     720
+       277 oliver_orbit                                                                                                      720
+       178 TravelerTreasureTrove                                                                                             720
+        37 gavin_cook                                                                                                        720
+       314 lola_labyrinth                                                                                                    720
+       270 hannah_horizon                                                                                                    720
+       285 leo_lullaby                                                                                                       720
+        21 patrick_morgan                                                                                                    720
+       219 LaylaLifestyleLogs                                                                                                720
+       338 diana_prince                                                                                                      720
+       126 ComedyCanvasCraze                                                                                                 720
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       245 sophia_serendipity                                                                                                720
+       263 brooke_blossom                                                                                                    720
+       290 ella_essence                                                                                                      720
+       296 lanie_kozlowski                                                                                                   720
+        10 olivia_brown                                                                                                      720
+        32 zoey_clark                                                                                                        720
+       239 mia_muse                                                                                                          720
+       213 MiaMelodicMoments                                                                                                 710
+       265 sophie_solar                                                                                                      700
+       232 AlexAdventureAwaits                                                                                               693
+       127 UrbanUmbrella360                                                                                                  690
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       319 nolan_nebula                                                                                                      690
+       328 olivia_outstanding                                                                                                690
+       348 neil_armstrong                                                                                                    690
+       237 ava_aesthetic                                                                                                     690
+       295 kenny_daniels                                                                                                     690
+       322 xena_xerox                                                                                                        690
+       325 quincy_quintessence                                                                                               690
+         4 alice_walker                                                                                                      690
+       208 VictorVoyageVision                                                                                                690
+       332 xavier_xclusive                                                                                                   690
+       324 ursula_umbra                                                                                                      690
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       289 liam_labyrinth                                                                                                    690
+       308 quentin_quasar                                                                                                    690
+       279 max_meadow                                                                                                        680
+       287 noah_nectar                                                                                                       675
+       203 GracefulGlobeVibes                                                                                                672
+        16 natalie_green                                                                                                     660
+       301 daisy_delta                                                                                                       660
+       283 owen_odyssey                                                                                                      660
+       310 oliver_onyx                                                                                                       660
+       305 sasha_sphinx                                                                                                      660
+       243 harper_harmony                                                                                                    660
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       220 NoahNomadNarrative                                                                                                660
+        49 william_nelson                                                                                                    660
+       339 elvis_presley                                                                                                     660
+       254 ethan_eclipse                                                                                                     660
+       226 LeoLearningLegacy                                                                                                 660
+       327 daniel_dapper                                                                                                     660
+       268 emma_eden                                                                                                         660
+        54 da_boys                                                                                                           660
+         8 susan_miller                                                                                                      660
+       229 MiaMelodicMoments                                                                                                 660
+        34 amy_morris                                                                                                        660
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       398 logan_lavender                                                                                                    660
+        26 hailey_taylor                                                                                                     660
+       235 olivia_orbit                                                                                                      660
+        39 mason_davis                                                                                                       660
+       281 aiden_aurora                                                                                                      660
+       171 CodeCraftsmanChronicles                                                                                           660
+       294 eric_cartman                                                                                                      660
+       273 nathan_nestle                                                                                                     660
+       190 ArtisticAscentAdventures                                                                                          660
+       372 lucas_lyric                                                                                                       645
+       187 TechTrendTrailblazing                                                                                             645
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       378 riley_rainbow                                                                                                     640
+        58 TechExplorer365                                                                                                   630
+       343 irene_adler                                                                                                       630
+       207 LilyLandscapeLife                                                                                                 630
+       214 CarterCraftsChronicle                                                                                             630
+       346 leonardo_daVinci                                                                                                  630
+       354 tina_turner                                                                                                       630
+       230 EvanExplorationEncounter                                                                                          630
+       227 LaylaLifestyleLogs                                                                                                630
+       347 marilyn_monroe                                                                                                    624
+       421 isabel_iris                                                                                                       620
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+        79 StarryEyedExplorer                                                                                                615
+        41 nathan_smith                                                                                                      600
+       323 rhysand_thesecond                                                                                                 600
+       304 zane_zephyr                                                                                                       600
+       249 amelia_artistry                                                                                                   600
+       321 floyd_fantasia                                                                                                    600
+       198 AdrianArtistryAvenue                                                                                              600
+       154 EnchantedEvermore                                                                                                 600
+       175 ElementalEpicExplorer                                                                                             600
+       275 ethan_echo                                                                                                        600
+       320 willow_wonder                                                                                                     600
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       329 nicholas_noteworthy                                                                                               600
+       260 nolan_novel                                                                                                       600
+         3 bob_jones                                                                                                         600
+         1 john_doe                                                                                                          600
+       267 jaxon_journey                                                                                                     600
+        14 emma_hall                                                                                                         600
+       256 owen_observatory                                                                                                  600
+       349 olivia_wilde                                                                                                      600
+       300 nolan_chris                                                                                                       600
+       297 tashi_poo                                                                                                  593.333333
+       169 EnchantedEra                                                                                                      585
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       471 azriel_amethyst                                                                                                   585
+       253 avery_anchor                                                                                                      585
+       223 CarterCraftyChronicle                                                                                             580
+       259 zara_zephyr                                                                                                       576
+       307 iris_iridescence                                                                                                  570
+       210 EvanExplorationEncounter                                                                                          570
+       209 AvaArtisanAdventures                                                                                              570
+       312 nina_nyquist                                                                                                      570
+       313 quincy_quantum                                                                                                    570
+       316 emma_enigma                                                                                                       570
+       231 IslaIntrigueInsider                                                                                               570
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       228 VictorVoyageVision                                                                                                570
+        72 NatureEnthusiastTV                                                                                                570
+       205 PenelopePioneerPage                                                                                               570
+       311 isla_illusion                                                                                                     570
+       417 emma_evergreen                                                                                                    570
+       201 BellaBeyondBorders                                                                                                570
+       206 ChaseCraftyChronicle                                                                                              570
+       302 xavier_zeppelin                                                                                                   570
+       303 amber_azure                                                                                                       570
+       202 XavierExplorerTV                                                                                                  570
+       215 SkylarSculptureStory                                                                                              570
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       345 katherine_jones                                                                                                   570
+       444 samwise_stardust                                                                                                  560
+       174 GourmetGazelleGazette                                                                                             560
+       487 starfall_stardust                                                                                                 555
+       317 dexter_dazzle                                                                                                     555
+        91 VogueVoyagerHQ                                                                                                    555
+       113 DIYDazzlerStudio                                                                                           548.571429
+       236 noah_narrative                                                                                                    540
+       291 jacob_journey                                                                                                     540
+         6 emily_white                                                                                                       540
+       344 jack_johnson                                                                                                      540
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       152 FearlessDreamer                                                                                                   540
+       286 emma_enigma                                                                                                       540
+       234 liam_lyric                                                                                                        540
+       439 nancy_drew                                                                                                        540
+       315 jason_jovial                                                                                                      540
+       257 audrey_azure                                                                                                      540
+       246 jackson_journey                                                                                                   540
+        38 hannah_johnson                                                                                                    540
+        45 adam_martinez                                                                                                     540
+       217 RubyRhythmicRambles                                                                                               540
+        17 brian_morris                                                                                                      540
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       276 lily_lagoon                                                                                                       540
+       264 evan_echelon                                                                                                      540
+       251 chloe_canvas                                                                                                      540
+        24 grace_kelly                                                                                                       540
+        31 peter_robinson                                                                                                    540
+       340 frank_sinatra                                                                                                     540
+       498 amren_abyss                                                                                                       525
+       422 jason_juniper                                                                                                   517.5
+       335 alice_wonderland                                                                                                  510
+       306 leo_lagoon                                                                                                        510
+       218 LeoLearningLegacy                                                                                                 510
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+         2 jane_smith                                                                                                        510
+       138 SkinnyDipping                                                                                                     510
+        86 BookishBardChannel                                                                                                495
+        33 eric_wright                                                                                                       480
+       271 logan_lustrous                                                                                                    480
+       293 nolan_nimbus                                                                                                      480
+        25 brandon_fisher                                                                                                    480
+       318 olivia_obsidian                                                                                                   480
+       248 oliver_ode                                                                                                        480
+       262 isaac_illusion                                                                                                    480
+       282 mia_mirage                                                                                                        480
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       278 grace_galaxy                                                                                                      480
+       299 nat_chamb                                                                                                         480
+       326 emily_esteemed                                                                                                    480
+       412 zachary_zephyr                                                                                                    480
+        15 jason_king                                                                                                        480
+         9 chris_evans                                                                                                       480
+        36 lily_rivera                                                                                                       480
+       288 isla_illuminate                                                                                                   480
+       132 AlmostLoveAffair                                                                                                  480
+       242 lucas_luminous                                                                                                    480
+       331 felicity_fantastic                                                                                                480
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+        64 TravelTreasureHunter                                                                                              480
+       212 AlexAdventureAwaits                                                                                               480
+       333 uma_unique                                                                                                        480
+       445 tony_tesseract                                                                                                    465
+       225 RubyRhythmicRambles                                                                                               450
+       342 harry_potter                                                                                                      450
+       337 charlie_chaplin                                                                                                   450
+       238 logan_lyric                                                                                                       450
+       309 marley_mirage                                                                                                     450
+       204 IanInsightfulInnings                                                                                              450
+       148 RunAndHideSeek                                                                                                    440
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+        40 ella_jones                                                                                                        420
+       255 lily_luminary                                                                                                     420
+       244 aiden_artisan                                                                                                     420
+       269 caleb_crescent                                                                                                    420
+       266 mark_2                                                                                                            420
+        13 ryan_clark                                                                                                        420
+       351 quincy_jones                                                                                                      420
+       221 StellaSerenityStudio                                                                                              420
+        27 daniel_nelson                                                                                                     420
+        20 ava_stewart                                                                                                       420
+       240 ethan_epic                                                                                                        420
+
+   USER_ID USERNAME                                                                                             AVERAGE_DURATION
+---------- ---------------------------------------------------------------------------------------------------- ----------------
+       274 ava_avalanche                                                                                                     420
+       284 ruby_rainforest                                                                                                   420
+        18 sophia_martinez                                                                                                   360
+        29 logan_wright                                                                                                      360
+        43 owen_williams                                                                                                     360
+       280 zoey_zephyr                                                                                                       360
+       491 feyre_archerons                                                                                                   360
+         7 david_jones                                                                                                       360
+        22 victoria_wood                                                                                                     300
+        11 michael_adams                                                                                                     300
+
+241 rows selected. 
+*/
 
