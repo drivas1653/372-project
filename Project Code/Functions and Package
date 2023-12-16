@@ -1,0 +1,112 @@
+CREATE OR REPLACE PACKAGE YouTubeAnalyticsPackage AS
+  FUNCTION ViewershipCountByHour RETURN SYS_REFCURSOR;
+
+  FUNCTION MostWatchedVideoDetails RETURN SYS_REFCURSOR;
+
+  FUNCTION Top5SearchedGenres RETURN SYS_REFCURSOR;
+
+  FUNCTION MostPopularVideoCategoryByMonth RETURN SYS_REFCURSOR;
+
+END YouTubeAnalyticsPackage;
+/
+
+CREATE OR REPLACE PACKAGE BODY YouTubeAnalyticsPackage AS
+  FUNCTION ViewershipCountByHour RETURN SYS_REFCURSOR IS
+    cur SYS_REFCURSOR;
+  BEGIN
+    OPEN cur FOR
+      SELECT
+          TO_CHAR(watch_date, 'HH24') AS watching_times,
+          COUNT(*) AS viewership_count
+      FROM
+          watch_history
+      GROUP BY
+          TO_CHAR(watch_date, 'HH24')
+      ORDER BY
+          viewership_count DESC;
+
+    RETURN cur;
+  END ViewershipCountByHour;
+
+  FUNCTION MostWatchedVideoDetails RETURN SYS_REFCURSOR IS
+    cur SYS_REFCURSOR;
+  BEGIN
+    OPEN cur FOR
+      SELECT *
+      FROM (
+          SELECT
+              v.title AS most_watched_video,
+              COUNT(*) AS watch_count,
+              MAX(h.watch_date) AS most_recent_watch_time
+          FROM
+              watch_history h
+          JOIN
+              videos v ON h.video_id = v.video_id
+          GROUP BY
+              v.title
+          ORDER BY
+              watch_count DESC
+      )
+      WHERE ROWNUM = 1;
+
+    RETURN cur;
+  END MostWatchedVideoDetails;
+
+  FUNCTION Top5SearchedGenres RETURN SYS_REFCURSOR IS
+    cur SYS_REFCURSOR;
+  BEGIN
+    OPEN cur FOR
+      SELECT
+          genre,
+          COUNT(*) AS search_count
+      FROM
+          search_history
+      GROUP BY
+          genre
+      ORDER BY
+          search_count DESC
+      FETCH FIRST 5 ROWS ONLY;
+
+    RETURN cur;
+  END Top5SearchedGenres;
+
+  FUNCTION MostPopularVideoCategoryByMonth RETURN SYS_REFCURSOR IS
+    cur SYS_REFCURSOR;
+  BEGIN
+    OPEN cur FOR
+      WITH VideoPopularity AS (
+          SELECT
+              v.genre AS video_category,
+              TO_CHAR(w.watch_date, 'YYYY-MM') AS watch_month,
+              COUNT(*) AS watch_count
+          FROM
+              watch_history w
+          JOIN
+              videos v ON w.video_id = v.video_id
+          GROUP BY
+              v.genre, TO_CHAR(w.watch_date, 'YYYY-MM')
+      )
+      SELECT
+          video_category,
+          watch_month,
+          watch_count
+      FROM (
+          SELECT
+              video_category,
+              watch_month,
+              watch_count,
+              ROW_NUMBER() OVER (PARTITION BY watch_month ORDER BY watch_count DESC) AS pop
+          FROM
+              VideoPopularity
+      )
+      WHERE
+          pop = 1
+      ORDER BY
+          watch_count DESC, watch_month, video_category;
+
+    RETURN cur;
+  END MostPopularVideoCategoryByMonth;
+
+
+END YouTubeAnalyticsPackage;
+/
