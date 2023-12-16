@@ -134,6 +134,46 @@ ORDER BY
     RETURN cur;
   END BestVideoDurationContent;
 
+REPLACE FUNCTION MostPopularGenreWatchHistory RETURN SYS_REFCURSOR IS
+    cur SYS_REFCURSOR
+BEGIN
+    OPEN cur FOR
+    SELECT
+        genre,
+        COUNT(DISTINCT wh.user_id) AS unique_users
+    FROM
+        videos v
+    JOIN
+        watch_history wh ON v.video_id = wh.video_id
+    GROUP BY
+        genre
+    ORDER BY
+        unique_users DESC;
+
+    RETURN cur;
+END MostPopularGenreWatchHistory;
+/
+
+FUNCTION DiverseContentOrUnique RETURN SYS_REFCURSOR IS
+    cur SYS_REFCURSOR;
+  BEGIN
+    OPEN cur FOR
+      SELECT
+    w.user_id,
+    v.genre,
+    COUNT(*) AS watch_count
+FROM
+    watch_history w
+JOIN
+    videos v ON w.video_id = v.video_id
+GROUP BY
+    w.user_id, v.genre;
+
+    RETURN cur;
+  END DiverseContentOrUnique;
+
+  
+
 
 END YouTubeAnalyticsPackage;
 /
