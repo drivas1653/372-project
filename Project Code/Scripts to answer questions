@@ -66,6 +66,27 @@ MOST_WATCHED_VIDEO                                                              
 Culinary Adventure: Global Cuisine                                                                                                                                                                                                                                        2 25-SEP-23 10.15.00.000000000 AM
 
 */
+-- Question 3
+-- "Based on the top 5 most popular genres searched, how would you say the users utilize youtube as a resource ?”
+SELECT
+    genre,
+    COUNT(*) AS search_count
+FROM
+    search_history 
+GROUP BY
+    genre
+ORDER BY
+    search_count DESC
+FETCH FIRST 5 ROWS ONLY;
+
+-- Results
+GENRE                                                                                                SEARCH_COUNT
+---------------------------------------------------------------------------------------------------- ------------
+Cooking                                                                                                        65
+Comedy                                                                                                         64
+Music                                                                                                          55
+Technology                                                                                                     35
+Science                                                                                                        20
 
 --Question 4
 -- “Which category of videos is most popular and which time of year is it watched?”
