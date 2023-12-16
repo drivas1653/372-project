@@ -13,6 +13,10 @@ CREATE OR REPLACE PACKAGE YouTubeAnalyticsPackage AS
   
   FUNCTION DiverseContentOrUnique RETURN SYS_REFCURSOR;
 
+  FUNCTION GenreChangesDuringYear RETURN SYS_REFCURSOR;
+
+  FUNCTION MostPopularTrends RETURN SYS_REFCURSOR;
+
 END YouTubeAnalyticsPackage;
 /
 
@@ -152,6 +156,27 @@ BEGIN
 
     RETURN cur;
 END MostPopularGenreWatchHistory;
+
+FUNCTION GenreChangesDuringYear RETURN SYS_RECURSOR IS
+    cur SYS_REFCURSOR;
+BEGIN
+  OPEN cur FOR
+    SELECT
+        EXTRACT(MONTH FROM release_date) AS month,
+        genre,
+        COUNT(*) AS genre_count
+    FROM
+        videos
+    GROUP BY
+        EXTRACT(MONTH FROM release_date),
+        genre
+    ORDER BY
+        EXTRACT(MONTH FROM release_date),
+        genre;
+  RETURN cur;
+END GenreChangesDuringYear;
+
+
 /
 
 FUNCTION DiverseContentOrUnique RETURN SYS_REFCURSOR IS
@@ -172,6 +197,23 @@ GROUP BY
     RETURN cur;
   END DiverseContentOrUnique;
 
+FUNCTION MostPopularTrends RETURN SYS_REFCURSOR IS
+    cur SYS_REFCURSOR;
+  BEGIN
+    OPEN cur FOR
+      SELECT
+    v.genre AS most_popular,
+    count(h.User_id) AS total_views
+      FROM
+          watch_history h
+      JOIN
+          videos v ON h.video_ID = v.video_ID
+      GROUP BY
+          genre
+      ORDER BY
+          total_views DESC;
+    RETURN cur;
+  END MostPopularTrends;
 
 END YouTubeAnalyticsPackage;
 /
