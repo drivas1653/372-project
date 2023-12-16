@@ -172,8 +172,6 @@ GROUP BY
     RETURN cur;
   END DiverseContentOrUnique;
 
-  
-
 
 END YouTubeAnalyticsPackage;
 /
