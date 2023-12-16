@@ -7,6 +7,12 @@ CREATE OR REPLACE PACKAGE YouTubeAnalyticsPackage AS
 
   FUNCTION MostPopularVideoCategoryByMonth RETURN SYS_REFCURSOR;
 
+  FUNCTION BestVideoDurationContent RETURN SYS_REFCURSOR;
+  
+  FUNCTION MostPopularGenreWatchHistory RETURN SYS_REFCURSOR;
+  
+  FUNCTION DiverseContentOrUnique RETURN SYS_REFCURSOR;
+
 END YouTubeAnalyticsPackage;
 /
 
@@ -106,6 +112,27 @@ CREATE OR REPLACE PACKAGE BODY YouTubeAnalyticsPackage AS
 
     RETURN cur;
   END MostPopularVideoCategoryByMonth;
+
+  FUNCTION BestVideoDurationContent RETURN SYS_REFCURSOR IS
+    cur SYS_REFCURSOR;
+  BEGIN
+    OPEN cur FOR
+      SELECT
+    u.user_id,
+    u.username,
+    AVG(v.duration_seconds) AS average_duration
+FROM
+    users u
+JOIN
+    watch_history wh ON u.user_id = wh.user_id
+JOIN
+    videos v ON wh.video_id = v.video_id
+GROUP BY
+    u.user_id, u.username
+ORDER BY
+    average_duration DESC;
+    RETURN cur;
+  END BestVideoDurationContent;
 
 
 END YouTubeAnalyticsPackage;
