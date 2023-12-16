@@ -100,35 +100,74 @@ ORDER BY
     watch_count DESC, watch_month, video_category;
 
 -- Results
-WITH VideoPopularity AS (
-    SELECT
-        v.genre AS video_category,
-        TO_CHAR(w.watch_date, 'YYYY-MM') AS watch_month,
-        COUNT(*) AS watch_count
-    FROM
-        watch_history w
-    JOIN
-        videos v ON w.video_id = v.video_id
-    GROUP BY
-        v.genre, TO_CHAR(w.watch_date, 'YYYY-MM')
-)
-SELECT
-    video_category,
-    watch_month,
-    watch_count
-FROM (
-    SELECT
-        video_category,
-        watch_month,
-        watch_count,
-        ROW_NUMBER() OVER (PARTITION BY watch_month ORDER BY watch_count DESC) AS pop
-    FROM
-        VideoPopularity
-)
-WHERE
-    pop = 1
-ORDER BY
-    watch_count DESC, watch_month, video_category;
+VIDEO_CATEGORY                                                                                       WATCH_M WATCH_COUNT
+---------------------------------------------------------------------------------------------------- ------- -----------
+DIY                                                                                                  2023-04          12
+Gaming                                                                                               2023-01          11
+Cooking                                                                                              2023-02          10
+Technology                                                                                           2023-03          10
+Gaming                                                                                               2018-12           2
+Cooking                                                                                              2023-09           2
+Sports                                                                                               2018-03           1
+Travel                                                                                               2018-04           1
+Music                                                                                                2018-05           1
+Education                                                                                            2018-06           1
+Funk                                                                                                 2018-07           1
+
+VIDEO_CATEGORY                                                                                       WATCH_M WATCH_COUNT
+---------------------------------------------------------------------------------------------------- ------- -----------
+Sports                                                                                               2018-08           1
+Sports                                                                                               2018-10           1
+Punk                                                                                                 2019-01           1
+RndB                                                                                                 2019-02           1
+Entertainment                                                                                        2019-04           1
+Education                                                                                            2019-05           1
+Entertainment                                                                                        2019-07           1
+Food nd Cooking                                                                                      2019-08           1
+Sports                                                                                               2019-09           1
+Sports                                                                                               2019-10           1
+J-Pop                                                                                                2019-11           1
+
+VIDEO_CATEGORY                                                                                       WATCH_M WATCH_COUNT
+---------------------------------------------------------------------------------------------------- ------- -----------
+Gaming                                                                                               2020-02           1
+Philosophy                                                                                           2020-03           1
+Entertainment                                                                                        2020-04           1
+Fashion                                                                                              2020-05           1
+Bluegrass                                                                                            2020-07           1
+Documentary                                                                                          2020-08           1
+Gaming                                                                                               2020-09           1
+Sports                                                                                               2020-11           1
+Thriller                                                                                             2020-12           1
+Sports                                                                                               2021-01           1
+Sports                                                                                               2021-02           1
+
+VIDEO_CATEGORY                                                                                       WATCH_M WATCH_COUNT
+---------------------------------------------------------------------------------------------------- ------- -----------
+Alternative                                                                                          2021-03           1
+Entertainment                                                                                        2021-04           1
+Sports                                                                                               2021-06           1
+Horror                                                                                               2021-07           1
+Gaming                                                                                               2021-10           1
+Entertainment                                                                                        2021-11           1
+History                                                                                              2021-12           1
+Gaming                                                                                               2022-05           1
+Entertainment                                                                                        2022-06           1
+Education                                                                                            2022-07           1
+Nature                                                                                               2022-08           1
+
+VIDEO_CATEGORY                                                                                       WATCH_M WATCH_COUNT
+---------------------------------------------------------------------------------------------------- ------- -----------
+Fashion                                                                                              2022-10           1
+K-Pop                                                                                                2023-05           1
+Fitness                                                                                              2023-06           1
+Travel                                                                                               2023-07           1
+Gaming                                                                                               2023-08           1
+Art                                                                                                  2023-10           1
+Art                                                                                                  2023-11           1
+Education                                                                                            2023-12           1
+
+52 rows selected. 
 
 -- Question 6
 --  “How does the genre of videos change during different times of the year?”
