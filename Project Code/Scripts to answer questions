@@ -67,6 +67,69 @@ Culinary Adventure: Global Cuisine                                              
 
 */
 
+--Question 4
+-- “Which category of videos is most popular and which time of year is it watched?”
+WITH VideoPopularity AS (
+    SELECT
+        v.genre AS video_category,
+        TO_CHAR(w.watch_date, 'YYYY-MM') AS watch_month,
+        COUNT(*) AS watch_count
+    FROM
+        watch_history w
+    JOIN
+        videos v ON w.video_id = v.video_id
+    GROUP BY
+        v.genre, TO_CHAR(w.watch_date, 'YYYY-MM')
+)
+SELECT
+    video_category,
+    watch_month,
+    watch_count
+FROM (
+    SELECT
+        video_category,
+        watch_month,
+        watch_count,
+        ROW_NUMBER() OVER (PARTITION BY watch_month ORDER BY watch_count DESC) AS pop
+    FROM
+        VideoPopularity
+)
+WHERE
+    pop = 1
+ORDER BY
+    watch_count DESC, watch_month, video_category;
+
+-- Results
+WITH VideoPopularity AS (
+    SELECT
+        v.genre AS video_category,
+        TO_CHAR(w.watch_date, 'YYYY-MM') AS watch_month,
+        COUNT(*) AS watch_count
+    FROM
+        watch_history w
+    JOIN
+        videos v ON w.video_id = v.video_id
+    GROUP BY
+        v.genre, TO_CHAR(w.watch_date, 'YYYY-MM')
+)
+SELECT
+    video_category,
+    watch_month,
+    watch_count
+FROM (
+    SELECT
+        video_category,
+        watch_month,
+        watch_count,
+        ROW_NUMBER() OVER (PARTITION BY watch_month ORDER BY watch_count DESC) AS pop
+    FROM
+        VideoPopularity
+)
+WHERE
+    pop = 1
+ORDER BY
+    watch_count DESC, watch_month, video_category;
+
 -- Question 6
 --  “How does the genre of videos change during different times of the year?”
 
